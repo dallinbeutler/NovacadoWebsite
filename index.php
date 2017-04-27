@@ -12,11 +12,11 @@
 			</tr>
          </table>
       </div>
+	  <div id="center area">
+	     <a href="https://cdn.authoritynutrition.com/wp-content/uploads/2014/09/avocado-sliced-in-half.jpg">avacado</a>
+		 premier
+	  </div>
    </body>
-<?php
-
-  phpinfo();
-
-?>
+<?php?>
 
 </HTML>
