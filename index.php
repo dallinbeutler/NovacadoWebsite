@@ -5,10 +5,12 @@
    </head>
    <body>
       <div id="header">
-         <ul>
-            <li>Home</li>
-            <li> About</li>
-         </ul>
+         <table>
+			<tr>
+               <td>Home</td>
+               <td> About</td>
+			</tr>
+         </table>
       </div>
    </body>
 <?php
