@@ -13,10 +13,9 @@
          </table>
       </div>
 	  <div id="center area">
-	     <a href="https://cdn.authoritynutrition.com/wp-content/uploads/2014/09/avocado-sliced-in-half.jpg">avacado</a>
+	     <img src="https://cdn.authoritynutrition.com/wp-content/uploads/2014/09/avocado-sliced-in-half.jpg" alt="avacados" style="width:304px;height:228px;">
 		 premier
 	  </div>
    </body>
 <?php?>
-
 </HTML>
