@@ -11,6 +11,7 @@
                <td><a><img src="novacado_pit.png" alt="avacados"style="height:25px;"></a></td>
 			   <td><a>Download</a></td>
                <td><a>Edits</a></td>
+			   <td><a>FAQs</a></td>
 			   <td><a>About</a></td>
 			</tr>
          </table>
@@ -22,9 +23,14 @@
 			</div>
             <br/>			
 			<myp>
-			   The world's coolest media player, <br/><br/>
+			   The world's coolest media player, <br/>
 			   combining your favorite movies with an easy censoring system to fit your needs.
 			</myp>
+			<div id ="pictureHolder">
+	           <img src="novacado_1.png" alt="avacados" class="centered" style="width:100%"/>
+			</div>
+			<br/>
+			<br/>
 			<br/>
 			<myp>
 			   Already have Novacado? Looking for edits? go to the <a>censor list</a>
