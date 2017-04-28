@@ -34,7 +34,9 @@ table{
 	margin: auto;
 
 }
-
+#pictureHolder{
+	width:100%;
+}
 #mainArea{
 	background-color: black;
 	border-radius: 20px;
