@@ -20,7 +20,7 @@
 	  <div class="centerArea">
 	     <div id="mainArea">
 			<div id ="pictureHolder">
-	           <img src="novacado_1.png" alt="avacados" class="centered"/>
+	           <img src="novacado_1.png" alt="avacados" class="centered" id=pictureHolder/>
 			</div>
             <br/>			
 			<myp>
