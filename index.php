@@ -9,7 +9,8 @@
 			<tr>
                <td><a><img src="novacado_pit.png" alt="avacados"style="height:25px;"></a></td>
 			   <td><a>Download</a></td>
-               <td><a>About</a></td>
+               <td><a>Edits</a></td>
+			   <td><a>About</a></td>
 			</tr>
          </table>
       </div>
@@ -22,6 +23,9 @@
 			<myp>
 			   The world's coolest media player, <br/>
 			   combining your favorite movies with an easy censoring system to fit your needs.
+			</myp>
+			<myp>
+			   add or find your edits on the edits page
 			</myp>
 		 </div>
 	  </div>
