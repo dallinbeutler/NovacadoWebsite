@@ -14,7 +14,8 @@
       </div>
 	  <div class="centerArea">
 	     <div id="mainArea">
-	        <img src="novacado_1.png" alt="avacados" class="centered" style="height:300px;">	
+	        <img src="novacado_1.png" alt="avacados" class="centered" style="height:300px;">
+            <br/>			
 			<myp>
 			   The world's coolest media player blending a rich
 			</myp>
