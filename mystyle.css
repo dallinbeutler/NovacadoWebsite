@@ -31,9 +31,8 @@ table{
 	min-height: 300px;
 }
 .centered{
-	position: absolute;
 	margin: auto;
-	max-width: 90%;
+
 }
 
 #mainArea{
