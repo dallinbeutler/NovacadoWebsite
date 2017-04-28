@@ -27,7 +27,7 @@
 			<br/>
 			<br/>
 			<myp>
-			   Already have Novacado? Looking for edits? go to the <a>censor list</a>
+			   Already have Novacado? Looking for edits? go to the <a href="edits.php">Edits list.</a>
 			</myp>
 		 </div>
 	  </div>
