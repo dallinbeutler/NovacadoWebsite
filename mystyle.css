@@ -5,6 +5,7 @@ td:hover{
 }
 td{
    padding-right: 10px;
+   padding-left: 10px;
 }
 body{
 	background-color: #134414;
@@ -42,6 +43,7 @@ table{
 	border-radius: 20px;
     top: 20%;
 	padding: 30px;
+	text-align: center;
 }
 
 myp{
