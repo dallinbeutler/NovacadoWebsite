@@ -13,6 +13,7 @@ body{
 #header{
 	font-family: "Arial Black", Gadget, sans-serif;
 	background-color: #80C04A;
+	padding:0px;
 }
 
 .centerArea{
@@ -20,7 +21,7 @@ body{
 	width: 80%;
 	min-width: 300px;
 	padding: 5px;
-	top: 20%;
+
 	min-height: 300px;
 }
 .centered{
@@ -32,6 +33,7 @@ body{
 #mainArea{
 	background-color: black;
 	border-radius: 20px;
+    top: 20%;
 }
 
 myp{

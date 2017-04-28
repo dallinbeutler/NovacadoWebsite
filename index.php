@@ -7,7 +7,7 @@
       <div id="header">
          <table>
 			<tr>
-               <td><a>Home</a></td>
+               <td><a><img src="novacado_pit.png" alt="avacados" class="centered" style="height:25px;"></a></td>
                <td><a>About</a></td>
 			</tr>
          </table>
