@@ -17,8 +17,9 @@
 	        <img src="novacado_1.png" alt="avacados" class="centered" style="height:300px;">
             <br/>			
 			<myp>
-			   The world's coolest media player blending a rich
-			</myp>
+			   The world's coolest media player, 
+			   combining your favorite movies with an easy censoring system to fit your needs.
+			   </myp>
 		 </div>
 	  </div>
 	  
