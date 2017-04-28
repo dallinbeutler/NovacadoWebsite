@@ -33,4 +33,6 @@ body{
 myp{
 	color: white;
 	font-size: 20px;
+	text-alig: center;
+	margin: 5;
 }
