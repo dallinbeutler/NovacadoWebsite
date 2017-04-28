@@ -16,6 +16,8 @@
 	     <div id="mainArea">
 		    <div class="centerArea">
 	            <img src="novacado_1.png" alt="avacados" style="width:304px;">
+				<img src="novacado_1.png" alt="avacados" style="width:304px;">
+				<img src="novacado_1.png" alt="avacados" style="width:304px;">
 				
 		    </div>
 		 </div>
