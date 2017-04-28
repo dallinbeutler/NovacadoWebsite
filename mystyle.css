@@ -38,9 +38,10 @@ table{
 	width:100%;
 }
 #mainArea{
-	background-color: black;
+	background-color: #134414;
 	border-radius: 20px;
     top: 20%;
+	padding: 30px;
 }
 
 myp{
