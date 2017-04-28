@@ -5,18 +5,9 @@
       <title> Novacado Video Player </title>
    </head>
    <body>
-      <div id="header">
-         <table>
-			<tr>
-               <td><a href="index.php"><img src="novacado_pit.png" alt="avacados" class="iconsize"></a></td>
-			   <td><a href="assignList.html">Assignments</a></td>
-			   <td><a>Download</a></td>
-               <td><a>Edits</a></td>
-			   <td><a>FAQs</a></td>
-			   <td><a>About</a></td>
-			</tr>
-         </table>
-      </div>
+      <?php 
+	  include 'headbar.php';
+	  ?>
 	  <div id="centerArea" >
 	     <div id="mainArea" class="centered">
 			<div id ="pictureHolder">
@@ -42,5 +33,5 @@
 	  </div>
 	  
    </body>
-<?php?>
+
 </HTML>
