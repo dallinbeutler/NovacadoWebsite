@@ -1,6 +1,7 @@
 <HTML>
    <head>
       <link rel="stylesheet" type="text/css" href="mystyle.css">
+	  <link rel="icon" href="novacado_pit.png">
       <title> Novacado Video Player </title>
    </head>
    <body>
