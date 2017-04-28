@@ -6,3 +6,17 @@ td:hover{
 body{
 	background-color: #A0C54C;
 }
+
+#header{
+	font-family: "Arial Black", Gadget, sans-serif
+}
+
+.centerArea{
+	margin: auto;
+	width: 50%;
+	min-width: 300px;
+}
+
+#mainArea{
+	background-color: black;
+}

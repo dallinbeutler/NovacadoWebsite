@@ -12,9 +12,10 @@
 			</tr>
          </table>
       </div>
-	  <div id="center area">
-	     <img src="https://cdn.authoritynutrition.com/wp-content/uploads/2014/09/avocado-sliced-in-half.jpg" alt="avacados" style="width:304px;height:228px;">
-		 premier
+	  <div class="centerArea">
+	     <div id="mainArea">
+	        <img src="novacado_1.png" alt="avacados" style="width:304px;height:228px;">
+		 </div>
 	  </div>
    </body>
 <?php?>
