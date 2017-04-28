@@ -16,7 +16,7 @@
 	  <div class="centerArea">
 	     <div id="mainArea">
 			<div id ="pictureHolder">
-	           <img src="novacado_1.png" alt="avacados" class="centered" style="height:300px;">
+	           <img src="novacado_1.png" alt="avacados" class="centered" style="width:100%">
 			<div>
             <br/>			
 			<myp>
