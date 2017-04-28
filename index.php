@@ -16,7 +16,10 @@
 	     <div id="mainArea">
 			<div class="centered">
 	        <img src="novacado_1.png" alt="avacados" style="height:300px;">	
-            </div>			
+            </div>
+			<myp>
+			   The world's coolest media player
+			</myp>
 		 </div>
 	  </div>
 	  

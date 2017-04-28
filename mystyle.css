@@ -21,8 +21,16 @@ body{
 	min-width: 300px;
 	padding: 0px;
 }
+.centered{
+	margin:auto;
+}
 
 #mainArea{
 	background-color: black;
 	border-radius: 20px;
+}
+
+myp{
+	color: white;
+	font-size: 20px;
 }
