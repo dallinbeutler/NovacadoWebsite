@@ -7,8 +7,8 @@
       <div id="header">
          <table>
 			<tr>
-               <td>Home</td>
-               <td> About</td>
+               <td><a>Home</a></td>
+               <td><a>About</a></td>
 			</tr>
          </table>
       </div>
