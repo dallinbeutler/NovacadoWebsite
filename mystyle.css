@@ -63,9 +63,11 @@ myp{
 	color: white;
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 20px;
+	width: 80%;
+}
+.center{
 	text-align: center;
 	margin: auto;
 	margin-left: 0px;
 	margin-right: 0px;
-	width: 80%;
 }
