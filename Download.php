@@ -11,7 +11,9 @@
 	  <div id="centerArea">
 	     <div id="mainArea">
             <br/>			
-
+            <myp>
+			   Sorry, not available yet, Check back soon!
+			</myp>
 		 </div>
 	  </div>
 	  
