@@ -19,6 +19,7 @@ body{
 	margin: auto;
 	width: 60%;
 	min-width: 300px;
+	padding: 0px;
 }
 
 #mainArea{

@@ -14,10 +14,12 @@
       </div>
 	  <div class="centerArea">
 	     <div id="mainArea">
-	        <img src="novacado_1.png" alt="avacados" style="height:300px;">		
+			<div class="centered">
+	        <img src="novacado_1.png" alt="avacados" style="height:300px;">	
+            </div>			
 		 </div>
 	  </div>
-	  dalasdfasdf
+	  
    </body>
 <?php?>
 </HTML>
