@@ -19,7 +19,7 @@
 			<myp>
 			   The world's coolest media player, 
 			   combining your favorite movies with an easy censoring system to fit your needs.
-			   </myp>
+			</myp>
 		 </div>
 	  </div>
 	  
