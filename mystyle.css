@@ -19,6 +19,9 @@ body{
 	margin: 0px;
 }
 
+table{
+	margin:0px;
+}
 .centerArea{
 	margin: auto;
 	width: 80%;
