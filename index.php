@@ -27,6 +27,7 @@
 			   combining your favorite movies with an easy censoring system to fit your needs.
 			</myp>
 			<br/>
+			<br/>
 			<div id ="pictureHolder">
 	           <img src="player.png" alt="avacados" class="centered" />
 			</div>
