@@ -26,6 +26,7 @@
 			   The world's coolest media player, <br/>
 			   combining your favorite movies with an easy censoring system to fit your needs.
 			</myp>
+			<br/>
 			<div id ="pictureHolder">
 	           <img src="player.png" alt="avacados" class="centered" />
 			</div>
