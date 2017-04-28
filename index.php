@@ -14,9 +14,7 @@
       </div>
 	  <div class="centerArea">
 	     <div id="mainArea">
-		    <div class="centerArea">
-	            <img src="novacado_1.png" alt="avacados" style="height:300px;">		
-		    </div>
+	        <img src="novacado_1.png" alt="avacados" style="height:300px;">		
 		 </div>
 	  </div>
 	  dalasdfasdf
