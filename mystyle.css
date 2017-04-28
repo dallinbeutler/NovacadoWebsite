@@ -24,7 +24,7 @@ table{
 }
 .centerArea{
 	margin: auto;
-	width: 80%;
+	width: 95%;
 	min-width: 300px;
 	padding: 5px;
 	
@@ -45,6 +45,7 @@ table{
 
 myp{
 	color: white;
+	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 20px;
 	text-align: center;
 	margin: auto;
