@@ -9,7 +9,7 @@ td{
    height: 25px;
 }
 ol{
-	text-align: center;
+
 }
 a{
 	color: black;
@@ -41,7 +41,6 @@ table{
 	width: 95%;
 	min-width: 300px;
 	padding: 5px;
-	
 	min-height: 300px;
 }
 .centered{
@@ -59,7 +58,6 @@ table{
 	border-radius: 20px;
     top: 20%;
 	padding: 30px;
-	text-align: center;
 }
 
 myp{
