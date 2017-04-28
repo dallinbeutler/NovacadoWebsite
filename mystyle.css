@@ -9,6 +9,7 @@ td{
 body{
 	background-color: #A0C54C;
 	padding: 0px;
+	margin: 0px;
 }
 
 #header{
@@ -23,7 +24,7 @@ body{
 	width: 80%;
 	min-width: 300px;
 	padding: 5px;
-
+	
 	min-height: 300px;
 }
 .centered{
