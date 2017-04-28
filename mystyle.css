@@ -8,6 +8,12 @@ td{
    padding-left: 10px;
    height: 25px;
 }
+a{
+	color: black;
+}
+.iconSize{
+	height:25px;
+}
 body{
 	background-color: #134414;
 	padding: 0px;

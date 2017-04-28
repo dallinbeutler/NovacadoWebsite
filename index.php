@@ -8,8 +8,8 @@
       <div id="header">
          <table>
 			<tr>
-               <td><a><img src="novacado_pit.png" alt="avacados"></a></td>
-			   <td><a href="assignList.html">assignments</a></td>
+               <td><a><img src="novacado_pit.png" alt="avacados" class="iconsize"></a></td>
+			   <td><a href="assignList.html">Assignments</a></td>
 			   <td><a>Download</a></td>
                <td><a>Edits</a></td>
 			   <td><a>FAQs</a></td>
