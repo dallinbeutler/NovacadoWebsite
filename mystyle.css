@@ -23,6 +23,7 @@ body{
 }
 .centered{
 	margin:auto;
+	max-width: 50%;
 }
 
 #mainArea{
@@ -33,6 +34,6 @@ body{
 myp{
 	color: white;
 	font-size: 20px;
-	text-alig: center;
+	text-align: center;
 	margin: 5;
 }
