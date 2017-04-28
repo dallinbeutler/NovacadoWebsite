@@ -8,7 +8,7 @@
       <div id="header">
          <table>
 			<tr>
-               <td><a><img src="novacado_pit.png" alt="avacados" class="iconsize"></a></td>
+               <td><a href="index.php"><img src="novacado_pit.png" alt="avacados" class="iconsize"></a></td>
 			   <td><a href="assignList.html">Assignments</a></td>
 			   <td><a>Download</a></td>
                <td><a>Edits</a></td>
@@ -20,7 +20,7 @@
 	  <div class="centerArea">
 	     <div id="mainArea">
 			<div id ="pictureHolder">
-	           <img src="novacado_1.png" alt="avacados" class="centered" id=pictureHolder/>
+	           <img src="novacado_1.png" alt="avacados" class="centered" />
 			</div>
             <br/>			
 			<myp>
