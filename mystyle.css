@@ -36,7 +36,7 @@ body{
 table{
 	margin:0px;
 }
-.centerArea{
+#centerArea{
 	margin: auto;
 	width: 95%;
 	min-width: 300px;
@@ -45,8 +45,11 @@ table{
 	min-height: 300px;
 }
 .centered{
-	margin: auto;
 
+    text-align: center;
+	margin: auto;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 #pictureHolder{
 	width:100%;
@@ -64,10 +67,4 @@ myp{
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 20px;
 	width: 80%;
-}
-.center{
-	text-align: center;
-	margin: auto;
-	margin-left: 0px;
-	margin-right: 0px;
 }
