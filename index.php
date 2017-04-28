@@ -17,8 +17,8 @@
 			</tr>
          </table>
       </div>
-	  <div id="centerArea" class="centered">
-	     <div id="mainArea">
+	  <div id="centerArea" >
+	     <div id="mainArea" class="centered">
 			<div id ="pictureHolder">
 	           <img src="novacado_1.png" alt="avacados" class="centered" />
 			</div>
