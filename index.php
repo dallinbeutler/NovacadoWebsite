@@ -22,11 +22,12 @@
 			</div>
             <br/>			
 			<myp>
-			   The world's coolest media player, <br/>
+			   The world's coolest media player, <br/><br/>
 			   combining your favorite movies with an easy censoring system to fit your needs.
 			</myp>
+			<br/>
 			<myp>
-			   add or find your edits on the edits page
+			   Already have Novacado? Looking for edits? go to the <a>censor list</a>
 			</myp>
 		 </div>
 	  </div>
