@@ -5,9 +5,23 @@ td:hover{
 }
 td{
    padding-right: 10px;
+   padding-left: 10px;
+   height: 25px;
+}
+ol{
+
+}
+a{
+	color: black;
+}
+.white{
+	color: white;
+}
+.iconSize{
+	height:25px;
 }
 body{
-	background-color: #A0C54C;
+	background-color: #134414;
 	padding: 0px;
 	margin: 0px;
 }
@@ -22,36 +36,38 @@ body{
 table{
 	margin:0px;
 }
-.centerArea{
+#centerArea{
 	margin: auto;
 	width: 95%;
 	min-width: 300px;
 	padding: 5px;
-	
 	min-height: 300px;
 }
 .centered{
-	margin: auto;
 
+    text-align: center;
+	margin: auto;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 #pictureHolder{
 	width:100%;
 }
 #mainArea{
-	background-color: black;
+	background-color: #003000;
 	border-radius: 20px;
     top: 20%;
+	padding: 30px;
 }
 
 myp{
 	color: white;
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 20px;
-	text-align: center;
-	position:center;
-	margin: auto;
-	margin-left: 0px;
-	margin-right: 0px;
 	width: 80%;
+<<<<<<< HEAD
 	
 }
+=======
+}
+>>>>>>> 00c3cb7dc4776d79a9216e25381a967ad1d14904
