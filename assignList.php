@@ -16,6 +16,8 @@
 			   <ol>
 			      <li><a href="hello.html" class="white">Hello</li>
 				  <li><a href="index.php" class="white"> New Home Page / assignment List</li>
+				  <li><a href="Edits.php" class="white"> New Home Page / assignment List</li>
+
 			   </ol>
 			</myp>
 		 </div>

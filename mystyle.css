@@ -50,6 +50,9 @@ table{
 	margin-left: 0px;
 	margin-right: 0px;
 }
+.row:nth-child(odd) {
+	background-color:blue;
+}
 #pictureHolder{
 	width:100%;
 }
@@ -68,6 +71,3 @@ myp{
 <<<<<<< HEAD
 	
 }
-=======
-}
->>>>>>> 00c3cb7dc4776d79a9216e25381a967ad1d14904

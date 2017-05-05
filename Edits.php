@@ -11,7 +11,9 @@
 	  <div id="centerArea">
 	     <div id="mainArea">
             <br/>			
-
+			<div class= "row">uno</div><br/>			
+			<div class= "row">dos</div><br/>			
+			<div class= "row">tres</div>
 		 </div>
 	  </div>
 	  
