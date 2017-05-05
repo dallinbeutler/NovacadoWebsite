@@ -52,9 +52,11 @@ table{
 }
 .row{
 	color: white;
+	width: 100%;
 }
 .row:nth-child(odd) {
 	background-color: blue;
+	color:blue;
 }
 #pictureHolder{
 	width:100%;
