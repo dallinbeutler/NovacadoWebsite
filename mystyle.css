@@ -50,8 +50,11 @@ table{
 	margin-left: 0px;
 	margin-right: 0px;
 }
+.row{
+	color: white;
+}
 .row:nth-child(odd) {
-	background-color:blue;
+	background-color: blue;
 }
 #pictureHolder{
 	width:100%;
