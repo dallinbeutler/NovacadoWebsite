@@ -10,7 +10,7 @@ function makeEdit($type, $number, $rating) {
 	echo '<myp>';
 	echo $number;
 	echo ' edits';
-	echo '</myp>
+	echo '</myp>';
 	for ($i = 0; $i < $rating; $i++){
 		echo '<img src="novacado_pit.png" alt="avacados" class="iconsize">';
 	}
