@@ -2,7 +2,7 @@
    <head>
       <link rel="stylesheet" type="text/css" href="mystyle.css">
 	  <link rel="icon" href="novacado_pit.png">
-      <title> Assignment List </title>
+      <title> Find your censor! </title>
    </head>
    <body>
       <?php 

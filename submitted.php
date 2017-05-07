@@ -2,7 +2,7 @@
    <head>
       <link rel="stylesheet" type="text/css" href="mystyle.css">
 	  <link rel="icon" href="novacado_pit.png">
-      <title> Assignment List </title>
+      <title> Order Submission </title>
    </head>
    <body>
       <?php 
@@ -20,6 +20,10 @@
 				echo $language;
 			?>
 			<form action="confirmation.php">
-			
+			Address <input type = "text" name = "address">
 			<input type="submit">
 			</form>
+		 </div>
+	  </div>
+	</body>
+</HTML>
