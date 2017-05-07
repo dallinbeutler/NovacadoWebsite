@@ -167,6 +167,8 @@ table{
 	background-color: #80C04A;
 	border-width: 3px;
 	border-radius:3px;
+	min-width: 200px;
+	min-height: 40px;
 }
 myp{
 	color: white;
