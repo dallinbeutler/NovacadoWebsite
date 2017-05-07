@@ -62,7 +62,7 @@ table{
 	background-color: #80C04A;
 }
 
-.squaredOne {
+#squaredOne {
   width: 28px;
   height: 28px;
   position: relative;
@@ -96,7 +96,7 @@ table{
     }
   }
   
-  .slideThree {
+  #slideThree {
   width: 80px;
   height: 26px;
   background: #333;
