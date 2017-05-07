@@ -15,9 +15,9 @@
 	     <div id="mainArea">
 			<form action="submitted.php" method="post">
             <br/>			
-            <?php makeEdit("nudity",3,4);?>
-            <?php makeEdit("violence",3,4);?>
-            <?php makeEdit("mild language",3,4);?>			
+            <?php makeEdit("nudity",3,5);?>
+            <?php makeEdit("violence",3,2);?>
+            <?php makeEdit("mild language",3,3);?>			
 			<input type="submit" value="compile edits"/>
 			</form>
 		 </div>
