@@ -3,7 +3,7 @@
 
 function makeEdit($type, $number, $rating) {
 	echo '<div class= "edit" >';
-	echo '<input type="checkbox"  id="slideThree" name="';
+	echo '<input type="checkbox"  class="squaredOne" name="';
 	echo $type;
 	echo '" />';
 	echo $type;
