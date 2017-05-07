@@ -14,6 +14,10 @@
 				if (isset($nudity)) echo "filtering nudity <br>";
 				if (isset($violence)) echo "filtering violence <br>";
 				if (isset($language)) echo "filtering nudity <br>";
+				echo "butts";
+				echo $nudity;
+				echo $violence;
+				echo $language;
 			?>
 			<form action="confirmation.php">
 			
