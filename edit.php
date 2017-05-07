@@ -8,7 +8,7 @@ function makeEdit($type, $number, $rating) {
 	echo "   ";
 	echo $number;
 	echo ' edits';
-	for ($i = 0; $i <= rating; $i++){
+	for ($i = 0; $i <= $rating; $i++){
 		echo '<img src="novacado_pit.png" alt="avacados" class="iconsize">';
 	}
     echo '</div><br/>';
