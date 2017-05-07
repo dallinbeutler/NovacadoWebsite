@@ -163,7 +163,11 @@ table{
     top: 20%;
 	padding: 30px;
 }
-
+#submit{
+	background-color: #80C04A;
+	border-width: 3px;
+	border-radius:3px;
+}
 myp{
 	color: white;
 	font-family: "Arial Black", Gadget, sans-serif;
