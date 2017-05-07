@@ -2,7 +2,7 @@
 <?php 
 
 function makeEdit($type, $number, $rating) {
-	echo '<div class= "edit" ><table style="width:100%"><tr><td>';
+	echo '<div class= "edit" ><table"><tr><td>';
 	echo '<input type="checkbox"  class="squaredOne" name="';
 	echo $type;
 	echo '" /></td><td>';
