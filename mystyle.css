@@ -50,11 +50,11 @@ table{
 	margin-left: 0px;
 	margin-right: 0px;
 }
-#row{
+.edit{
 	color: white;
 	width: 100%;
 }
-#row:nth-of-type(odd) {
+.edit:nth-of-type(odd) {
 	background-color: blue;
 	color:blue;
 }
