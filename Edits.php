@@ -19,7 +19,7 @@
             <?php makeEdit("nudity",3,5);?>
             <?php makeEdit("violence",3,2);?>
             <?php makeEdit("language",15,3);?>			
-			<input type="submit" value="compile edits"/>
+			<input type="submit" value="compile edits" class="submit"/>
 			</form>
 		 </div>
 	  </div>
