@@ -7,13 +7,20 @@
    <body>
       <?php 
 	  include 'headbar.php';
+	  include 'edit.php';
+	  session_start();
 	  ?>
 	  <div id="centerArea">
 	     <div id="mainArea">
+			<form action="submitted.php" method="post">
             <br/>			
-			<div class= "row">uno</div><br/>			
+			<?php 
+			makeEdit("nudity",3,4);
+			?>			
 			<div class= "row">dos</div><br/>			
 			<div class= "row">tres</div>
+			<input type="submit"/>
+			</form>
 		 </div>
 	  </div>
 	  
