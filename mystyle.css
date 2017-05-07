@@ -54,7 +54,7 @@ table{
 	color: white;
 	width: 100%;
 }
-.row:nth-child(odd) {
+.row:nth-of-type(odd) {
 	background-color: blue;
 	color:blue;
 }
