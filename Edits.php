@@ -14,9 +14,7 @@
 	     <div id="mainArea">
 			<form action="submitted.php" method="post">
             <br/>			
-			<?php 
-			makeEdit("nudity",3,4);
-			?>			
+
 			<div class= "row">dos</div><br/>			
 			<div class= "row">tres</div>
 			<input type="submit"/>
