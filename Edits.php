@@ -9,6 +9,7 @@
 	  include 'headbar.php';
 	  include 'edit.php';
 	  session_start();
+	  $_SESSION['cart']=array();
 	  ?>
 	  <div id="centerArea">
 	     <div id="mainArea">
@@ -17,7 +18,7 @@
             <?php makeEdit("nudity",3,4);?>
             <?php makeEdit("violence",3,4);?>
             <?php makeEdit("mild language",3,4);?>			
-			<input type="submit" text="compile edits"/>
+			<input type="submit" value="compile edits"/>
 			</form>
 		 </div>
 	  </div>
