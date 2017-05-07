@@ -70,6 +70,11 @@ table{
     top: 20%;
 	padding: 30px;
 }
+#fancycheck{
+	height: 25px;
+	width:25px;
+	background-color:green;
+}
 
 myp{
 	color: white;
@@ -80,3 +85,4 @@ myp{
 form{
 	margin: 0;
 }
+
