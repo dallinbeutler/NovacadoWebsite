@@ -2,19 +2,19 @@
 <?php 
 
 function makeEdit($type, $number, $rating) {
-	echo '<div class= "edit" >';
+	echo '<div class= "edit" ><table><tr><td>';
 	echo '<input type="checkbox"  class="squaredOne" name="';
 	echo $type;
-	echo '" />';
+	echo '" /></td><td>';
 	echo $type;
-	echo '<p style="margin:auto">';
+	echo '</td><td>';
 	echo $number;
 	echo ' edits';
-	echo '</p>';
+	echo '</td><td>';
 	for ($i = 0; $i < $rating; $i++){
 		echo '<img src="novacado_pit.png" alt="avacados" class="iconsize">';
 	}
-    echo '</div>';
+    echo '</td></tr></table></div>';
 }
 ?>
 

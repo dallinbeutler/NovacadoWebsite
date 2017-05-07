@@ -57,6 +57,7 @@ table{
 	background-color: #336434;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	padding-left: 15px;
 }
 .edit:nth-of-type(odd) {
 	background-color: #80C04A;
