@@ -8,7 +8,7 @@ function makeEdit($type, $number, $rating) {
 	echo "   ";
 	echo $number;
 	echo ' edits';
-	for ($i = 0; i <= rating; $i++){
+	for ($i = 0; $i <= rating; $i++){
 		echo " ! ";
 	}
     echo '</div><br/>';
