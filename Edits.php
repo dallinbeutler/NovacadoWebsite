@@ -14,9 +14,9 @@
 	     <div id="mainArea">
 			<form action="submitted.php" method="post">
             <br/>			
-            <?php makeEdit("nudity",3,4);?>			
-			<div class= "row">dos</div><br/>			
-			<div class= "row">tres</div>
+            <?php makeEdit("nudity",3,4);?>
+            <?php makeEdit("violence",3,4);?>
+            <?php makeEdit("mild language",3,4);?>			
 			<input type="submit"/>
 			</form>
 		 </div>
