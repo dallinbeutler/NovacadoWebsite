@@ -10,6 +10,7 @@
 	  include 'edit.php';
 	  session_start();
 	  $_SESSION['cart']=array();
+	  $nudity = $violence = $language = "";
 	  ?>
 	  <div id="centerArea">
 	     <div id="mainArea">
