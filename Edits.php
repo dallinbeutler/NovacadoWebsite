@@ -17,7 +17,7 @@
             <?php makeEdit("nudity",3,4);?>
             <?php makeEdit("violence",3,4);?>
             <?php makeEdit("mild language",3,4);?>			
-			<input type="submit"/>
+			<input type="submit" text="compile edits"/>
 			</form>
 		 </div>
 	  </div>
