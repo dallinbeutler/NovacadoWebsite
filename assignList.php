@@ -2,7 +2,7 @@
    <head>
       <link rel="stylesheet" type="text/css" href="mystyle.css">
 	  <link rel="icon" href="novacado_pit.png">
-      <title> Assignment List </title>
+      <title> assignment 5 </title>
    </head>
    <body>
       <?php 
@@ -17,7 +17,8 @@
 			      <li><a href="hello.html" class="white">Hello</li>
 				  <li><a href="index.php" class="white"> New Home Page / assignment List</li>
 				  <li><a href="Edits.php" class="white"> cart-like checkout system</li>
-
+				  <li> N/A </li>
+				  <li><a href="assign5.php" class="white"> simple table display</li>
 			   </ol>
 			</myp>
 		 </div>
