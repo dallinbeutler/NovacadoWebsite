@@ -12,10 +12,10 @@
 	     <div id="mainArea">
             <br/>			
 			<?php
-				$servername = "localhost";
-				$username = "username";
-				$password = "password";
-				$dbname = "myDB";
+				$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
+				$username = "fmtextbjvwjlcy";
+				$password = "6ac6980946253a82ad6759afe6c2828659ca889e406e9afeeacd53d34283a17c";
+				$dbname = "dmns5jadj6q0l";
 
 				// Create connection
 				$conn = new mysqli($servername, $username, $password, $dbname);
@@ -24,7 +24,7 @@
 					die("Connection failed: " . $conn->connect_error);
 				} 
 
-				$sql = "SELECT id, firstname, lastname FROM MyGuests";
+				$sql = "SELECT id, accountname, email FROM account";
 				$result = $conn->query($sql);
 
 				if ($result->num_rows > 0) {
