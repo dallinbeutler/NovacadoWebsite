@@ -18,23 +18,10 @@
 				$dbname = "dmns5jadj6q0l";
 
 				// Create connection
-				$conn = new mysqli($servername, $username, $password, $dbname);
+				//$conn = new mysqli($servername, $username, $password, $dbname);
+				$conn = pg_connect( "host=http://ec2-23-21-169-238.compute-1.amazonaws.com port=5432 dbname=dmns5jadj6q0l user=fmtextbjvwjlcy password= 6ac6980946253a82ad6759afe6c2828659ca889e406e9afeeacd53d34283a17c");
 				// Check connection
-				if ($conn->connect_error) {
-					die("Connection failed: " . $conn->connect_error);
-				} 
 
-				$sql = "SELECT id, accountname, email FROM account";
-				$result = $conn->query($sql);
-
-				if ($result->num_rows > 0) {
-					// output data of each row
-					while($row = $result->fetch_assoc()) {
-						echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-					}
-				} else {
-					echo "0 results";
-				}
 				$conn->close();
 			?>
 		 </div>
