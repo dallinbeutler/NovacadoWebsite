@@ -23,7 +23,7 @@
 				// Check connection
 				
 				$query = 'SELECT * FROM account';
-				$result = pg_query($query) or die('Query failed: ' . pg_last_error());
+				$result = pg_query($query);// or die('Query failed: ' . pg_last_error())
 				
 				$conn->close();
 			?>
