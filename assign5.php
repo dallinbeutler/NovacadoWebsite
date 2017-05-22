@@ -23,7 +23,7 @@
 									dbname=dmns5jadj6q0l 
 									user=fmtextbjvwjlcy 
 									password= 6ac6980946253a82ad6759afe6c2828659ca889e406e9afeeacd53d34283a17c")
-						or die('Could not connect: ' . pg_last_error());
+						or die('Could not connect :( ' . pg_last_error());
 				// Check connection
 				
 				$query = 'SELECT * FROM account';
