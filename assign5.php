@@ -19,7 +19,7 @@
 
 				// Create connection
 				//$conn = new mysqli($servername, $username, $password, $dbname);
-				$conn = pg_connect( "host=http://ec2-23-21-169-238.compute-1.amazonaws.com 
+				$conn = pg_connect( "host=ec2-23-21-169-238.compute-1.amazonaws.com 
 									dbname=dmns5jadj6q0l 
 									user=fmtextbjvwjlcy 
 									password= 6ac6980946253a82ad6759afe6c2828659ca889e406e9afeeacd53d34283a17c")
@@ -27,11 +27,11 @@
 				// Check connection
 				
 				$query = 'SELECT * FROM account';
-				$result = pg_query($query) or die('Query failed: ' . pg_last_error());
+				$result = pg_query($conn, s$query) or die('Query failed: ' . pg_last_error());
 				
 				// Printing results in HTML
 				echo "<table>\n";
-				while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
+				while ($line = pg_fetch_aray($result, null, PGSQL_ASSOC)) {
 					echo "\t<tr>\n";
 					foreach ($line as $col_value) {
 						echo "\t\t<td>$col_value</td>\n";
