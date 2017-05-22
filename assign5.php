@@ -18,7 +18,8 @@
 				$dbname = "dmns5jadj6q0l";
 
 				$dbconn = pg_connect("host=ec2-23-21-169-238.compute-1.amazonaws.com port=5432 dbname=dmns5jadj6q0l user=fmtextbjvwjlcy password=6ac6980946253a82ad6759afe6c2828659ca889e406e9afeeacd53d34283a17c");
-				
+				if(!$dbconn)
+					echo "FAILURE AGAIN";
 				$query = 'SELECT * FROM account';
 				$result = pg_query($dbconn, $query) or die('Query failed: ' . pg_last_error());
 				
