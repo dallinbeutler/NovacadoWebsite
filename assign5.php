@@ -21,7 +21,7 @@
 				echo 'connected!';
 				$query = 'SELECT * FROM account';
 				$result = pg_query($dbconn, $query) or die('Query failed: ' . pg_last_error());
-				
+				echo 'queried!';
 				// Printing results in HTML
 				echo "<table>\n";
 				while ($line = pg_fetch_aray($result, null, PGSQL_ASSOC)) {
