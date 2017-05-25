@@ -32,28 +32,32 @@
 				$query = 'SELECT * FROM account';
 				//$result = pg_query($dbconn, $query) or die('Query failed: ' . pg_last_error());
 				$statement = $db->prepare($query);
-				$statement->bindValue(":movie_title", $movie, PDO::PARAM_STR);
+				//$statement->bindValue(":movie_title", $movie, PDO::PARAM_STR);
 				$statement->execute();
 				$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 				
 				echo 'queried!';
 				// Printing results in HTML
 				echo "<table>\n";
-				while ($line = pg_fetch_array($results, null, PGSQL_ASSOC)) {
+				foreach ($results as $row) {
+					echo "<li><p>" . $row['accountname'] . "</p></li>";
+				}
+				
+				/*while ($line = pg_fetch_array($results, null, PGSQL_ASSOC)) {
 					echo "\t<tr>\n";
-					foreach ($line as $col_value) {
+					foreach ($results as $col_value) {
 						echo "\t\t<td>$col_value</td>\n";
 					}
 					echo "\t</tr>\n";
-				}
+				}*/
 				echo "</table>\n";
 				echo "made it this far!";
 				// Free resultset
-				pg_free_result($result);
+				//pg_free_result($result);
 
 				
 				
-				$conn->close();
+				//$conn->close();
 			?>
 		 </div>
 	  </div>
