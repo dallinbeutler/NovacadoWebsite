@@ -31,7 +31,7 @@
 				echo 'connected!';
 				//$query = 'SELECT * FROM account';
 				//$query = 'SELECT name, birthday, pictureUrl FROM actor a INNER JOIN movieActor ma ON a.id = ma.actorId INNER JOIN movie m ON m.id = ma.movieId WHERE m.title = :movie_title';
-				$query = 'SELECT name, birthday, pictureUrl FROM actor a INNER JOIN movieActor ma ON a.id = ma.actorId INNER JOIN movie m ON m.id = ma.movieId WHERE m.title = :movie_title';
+				$query = 'SELECT mes.creationdate, mes.lasteditdate, mes.moviedbnumber, acc.accountname FROM movieeditset  mes INNER JOIN account acc ON acc.id = mes.account_id';
 				
 				//$result = pg_query($dbconn, $query) or die('Query failed: ' . pg_last_error());
 				$statement = $db->prepare($query);
