@@ -41,10 +41,14 @@
 				
 				echo 'queried!';
 				// Printing results in HTML
-				echo "<table>\n";
+				
+				foreach ($results as $row) {
+			echo "<li><p>" . $row . "</p></li>";
+		}
+				/*echo "<table>\n";
 				foreach ($results as $row) {
 					echo "<li><p>" . $row['accountname'] . "</p></li>";
-				}
+				}*/
 				
 				/*while ($line = pg_fetch_array($results, null, PGSQL_ASSOC)) {
 					echo "\t<tr>\n";
