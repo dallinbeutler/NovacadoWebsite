@@ -29,7 +29,10 @@
 				}
 				
 				echo 'connected!';
-				$query = 'SELECT * FROM account';
+				//$query = 'SELECT * FROM account';
+				//$query = 'SELECT name, birthday, pictureUrl FROM actor a INNER JOIN movieActor ma ON a.id = ma.actorId INNER JOIN movie m ON m.id = ma.movieId WHERE m.title = :movie_title';
+				$query = 'SELECT name, birthday, pictureUrl FROM actor a INNER JOIN movieActor ma ON a.id = ma.actorId INNER JOIN movie m ON m.id = ma.movieId WHERE m.title = :movie_title';
+				
 				//$result = pg_query($dbconn, $query) or die('Query failed: ' . pg_last_error());
 				$statement = $db->prepare($query);
 				//$statement->bindValue(":movie_title", $movie, PDO::PARAM_STR);
