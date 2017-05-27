@@ -1,13 +1,18 @@
-td:hover{
+#topbar:hover{
    background-color: #80A52C;
    font-weight: 500;
    
 }
-td{
+#topbar{
    padding-right: 10px;
    padding-left: 10px;
    height: 25px;
 }
+#dblist{
+	background-color: #80A52C;
+	width: 100%;
+}
+
 ol{
 
 }

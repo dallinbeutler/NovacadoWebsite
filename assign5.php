@@ -41,7 +41,7 @@
 				
 				echo 'queried!';
 				// Printing results in HTML
-				echo '<table style="width:100%">';
+				echo '<table id="dblist">';
 				foreach ($results as $row) {
 					echo '<tr><td>' . $row[creationdate] . '</td><td>'. $row[lasteditdate]. '</td><td>'. $row[accountname] . '</td></tr><br/>';
 				
