@@ -43,7 +43,7 @@
 				// Printing results in HTML
 				echo "<table>";
 				foreach ($results as $row) {
-					echo "<tr><td>" . $row[creationdate] . "</td><td>". $row[lasteditdate]. "</td><td>". $row[accountname] . "</td></tr>";
+					echo '<tr><td>' . $row[creationdate] . '</td><td>'. $row[lasteditdate]. '</td><td>'. $row[accountname] . '</td></tr>';
 				echo "</table>";
 		}	
 				/*echo "<table>\n";
