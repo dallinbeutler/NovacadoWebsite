@@ -1,9 +1,9 @@
-#topbar:hover{
+.topbar:hover{
    background-color: #80A52C;
    font-weight: 500;
    
 }
-#topbar{
+.topbar{
    padding-right: 10px;
    padding-left: 10px;
    height: 25px;
