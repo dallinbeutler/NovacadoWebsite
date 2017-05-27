@@ -44,8 +44,9 @@
 				echo '<table style="width:100%">';
 				foreach ($results as $row) {
 					echo '<tr><td>' . $row[creationdate] . '</td><td>'. $row[lasteditdate]. '</td><td>'. $row[accountname] . '</td></tr><br/>';
+				
+				}	
 				echo "</table>";
-		}	
 				/*echo "<table>\n";
 				foreach ($results as $row) {
 					echo "<li><p>" . $row['accountname'] . "</p></li>";
