@@ -57,9 +57,9 @@
 						echo "\t\t<td>$col_value</td>\n";
 					}
 					echo "\t</tr>\n";
-				}*/
+				}
 				echo "</table>\n";
-				echo "made it this far!";
+				echo "made it this far!";*/
 				// Free resultset
 				//pg_free_result($result);
 
