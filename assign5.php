@@ -41,11 +41,10 @@
 				
 				echo 'queried!';
 				// Printing results in HTML
-				<table>
-				
+				echo "<table>";
 				foreach ($results as $row) {
 					echo "<tr><td>" . $row[creationdate] . "</td><td>". $row[lasteditdate]. "</td><td>". $row[accountname] . "</td></tr>";
-				</table>
+				echo "</table>";
 		}	
 				/*echo "<table>\n";
 				foreach ($results as $row) {
