@@ -28,7 +28,7 @@
 					die();
 				}
 				
-				echo 'connected!';
+				//echo 'connected!';
 				//$query = 'SELECT * FROM account';
 				//$query = 'SELECT name, birthday, pictureUrl FROM actor a INNER JOIN movieActor ma ON a.id = ma.actorId INNER JOIN movie m ON m.id = ma.movieId WHERE m.title = :movie_title';
 				$query = 'SELECT mes.creationdate, mes.lasteditdate, mes.moviedbnumber, acc.accountname FROM movieeditset  mes INNER JOIN account acc ON acc.id = mes.account_id';
@@ -39,9 +39,9 @@
 				$statement->execute();
 				$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 				
-				echo 'queried!';
+				//echo 'queried!';
 				// Printing results in HTML
-				echo '<table id="dblist">';
+				echo '<table id="dblist"><th>creation date</th><th>last modified</th><th>author</th>';
 				foreach ($results as $row) {
 					echo '<tr><td>' . $row[creationdate] . '</td><td>'. $row[lasteditdate]. '</td><td>'. $row[accountname] . '</td></tr><br/>';
 				
