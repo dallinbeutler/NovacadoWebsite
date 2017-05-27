@@ -10,7 +10,7 @@
 	  ?>
 	  <div id="centerArea">
 	     <div id="mainArea">
-            <br/>			
+            <myp class="center"><h2>Uploads</h2></myp>		
 			<?php
 				$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
 				$username = "fmtextbjvwjlcy";
