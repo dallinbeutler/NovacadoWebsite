@@ -44,7 +44,7 @@
 				<table>
 				
 				foreach ($results as $row) {
-					echo "<tr><p>" . $row[creationdate] . "---". $row[lasteditdate]. "---". $row[accountname] . "</p></tr>";
+					echo "<tr><td>" . $row[creationdate] . "</td><td>". $row[lasteditdate]. "</td><td>". $row[accountname] . "</td></tr>";
 				</table>
 		}	
 				/*echo "<table>\n";
