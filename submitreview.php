@@ -1,9 +1,9 @@
 <?php
-	$editset = intval($_GET['q']);
+	$editset = intval($_GET['editset']);
 	$title = htmlspecialchars($_GET["title"]);
 	$rating = intval($_GET['selector']);
 	$description = htmlspecialchars($_GET["comment"]);
-	if(!is_int($q))
+	if(!is_int($editset))
 		die('invalid request');
 	
 	$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
@@ -21,7 +21,7 @@
 	}
 	
 	$query = "INSERT INTO movieeditsetreview (account, creationdate, lasteditdate, title, stars, description)
-VALUES (6, now(), now(),':title',':rating',':description');";
+VALUES (6, NOW(), NOW(),':title',':rating',':description');";
 	$statement = $db->prepare($query);
 	$statement->bindParam(':title', $title);
 	$statement->bindParam(':rating', $rating);
