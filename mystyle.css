@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/*
+background-color: #134414;
+*/
+body, html{
+	height: 100%;
+	background: #222222;
+	font-family: 'Lato', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+body{
+
+}
 .topbar:hover{
    background-color: #80A52C;
    font-weight: 500;
@@ -29,11 +43,7 @@ a{
 .iconSize{
 	height:25px;
 }
-body{
-	background-color: #134414;
-	padding: 0px;
-	margin: 0px;
-}
+
 
 #header{
 	font-family: "Arial Black", Gadget, sans-serif;
@@ -250,5 +260,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
 
 
