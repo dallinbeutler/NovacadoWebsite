@@ -60,7 +60,11 @@
 				// Printing results in HTML
 				echo '<table id="dblist"><th>movie (placeholder id)</th><th>creation date</th><th>last modified</th><th>author</th>';
 				foreach ($results as $row) {
-					echo '<tr><td>'. $row[moviedbnumber] . '</td><td>' $row[creationdate] . '</td><td>'. $row[lasteditdate]. '</td><td>'. $row[accountname] . '</td><td><button type="button" onclick=showreviews('. $row[id]. ')>show edits</button></td></tr><placeholder id=ins'.$row[id].'></placeholder><br/>';
+					echo '<tr><td>'. $row[moviedbnumber] 
+					. '</td><td>'. $row[creationdate] 
+					. '</td><td>'. $row[lasteditdate]
+					. '</td><td>'. $row[accountname] 
+					. '</td><td><button type="button" onclick=showreviews('. $row[id]. ')>show edits</button></td></tr><div id=ins'.$row[id].'></div><br/>';
 				
 				}	
 				echo "</table>";
