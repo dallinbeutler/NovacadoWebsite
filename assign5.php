@@ -65,7 +65,8 @@
 					. '</td><td>'. $row[creationdate] 
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 
-					. '</td><td><button type="button" onclick=showreviews('. $row[id]. ')>show edits</button></td></tr></table><div id=ins'.$row[id].'></div><table ">';
+					. '</td><td><button type="button" onclick=showreviews('. $row[id]. ')>show edits</button>'
+					. '</td></tr><tr><td colspan=5><div id=ins'.$row[id].'></div></td></tr>';
 				
 				}	
 				echo "</table>";
