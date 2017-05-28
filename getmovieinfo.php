@@ -29,28 +29,33 @@
 
 	$statement->execute();
 	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-	echo '<table class="review">
-	<tr>
-	<th>title</th>
-	<th>reviewer</th>
-	<th>rating</th>
-	<th>last edit date</th>
-	<th>description</th>
-	</tr>';
-	foreach ($results as $row) {
-		echo '<tr class="edit">';
-		echo "<td>" . $row['title'] . "</td>";
-    echo "<td>" . $row['accountname'] . "</td>";
-    echo "<td>";
-		for ($i = 0; $i < $row['stars']; $i++){
-		echo '<img src="novacado_pit.png" alt="avacados" class="iconsize">';
-	}
-	echo "</td>";
-    echo "<td>" . $row['lasteditdate'] . "</td>";
-    echo "<td>" . $row['description'] . "</td>";
-    echo "</tr>";
-}
-	echo "</table>";
+	$count = $results->rowCount();
+	if($count > 0){
+		echo '<table class="review">
+		<tr>
+		<th>title</th>
+		<th>reviewer</th>
+		<th>rating</th>
+		<th>last edit date</th>
+		<th>description</th>
+		</tr>';
+		foreach ($results as $row) {
+			echo '<tr class="edit">';
+			echo "<td>" . $row['title'] . "</td>";
+		echo "<td>" . $row['accountname'] . "</td>";
+		echo "<td>";
+			for ($i = 0; $i < $row['stars']; $i++){
+			echo '<img src="novacado_pit.png" alt="avacados" class="iconsize">';
+		}
+		echo "</td>";
+		echo "<td>" . $row['lasteditdate'] . "</td>";
+		echo "<td>" . $row['description'] . "</td>";
+		echo "</tr>";
+		}
+		echo "</table>";
+		}
+	else
+		echo "no reviews yet!";
 ?>
 </body>
 </html>
