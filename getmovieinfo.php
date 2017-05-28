@@ -60,8 +60,10 @@
 		echo "<td>" . $row['description'] . "</td>";
 		echo "</tr>";
 		}
-		echo "</table>";
+		echo "</table><br>";
+		
 }
+echo '<a href="makeReview.php?q='.$q.'"> add a review? </button>';
 ?>
 </body>
 </html>
