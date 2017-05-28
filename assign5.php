@@ -1,8 +1,31 @@
 <HTML>
-   <head>
-      <link rel="stylesheet" type="text/css" href="mystyle.css">
-	  <link rel="icon" href="novacado_pit.png">
-      <title> assignment 5 </title>
+	<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="icon" href="novacado_pit.png">
+    <title> assignment 5 </title>
+	<script>
+		function showreviews(str) {
+		if (str == "") {
+			document.getElementById("txtHint").innerHTML = "";
+			return;
+		} else { 
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("ins" + str ).innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","getmovieinfo.php?q="+str,true);
+        xmlhttp.send();
+    }
+}
+</script>
    </head>
    <body>
       <?php 
@@ -27,46 +50,23 @@
 					echo "Error connecting to the db. Details: $ex";
 					die();
 				}
-				
-				//echo 'connected!';
+
 				//$query = 'SELECT * FROM account';
 				//$query = 'SELECT name, birthday, pictureUrl FROM actor a INNER JOIN movieActor ma ON a.id = ma.actorId INNER JOIN movie m ON m.id = ma.movieId WHERE m.title = :movie_title';
-				$query = 'SELECT mes.creationdate, mes.lasteditdate, mes.moviedbnumber, acc.accountname FROM movieeditset  mes INNER JOIN account acc ON acc.id = mes.account_id';
-				
-				//$result = pg_query($dbconn, $query) or die('Query failed: ' . pg_last_error());
+				$query = 'SELECT mes.id, mes.moviedbnumber, mes.creationdate, mes.lasteditdate, mes.moviedbnumber, acc.accountname FROM movieeditset  mes INNER JOIN account acc ON acc.id = mes.account_id';
 				$statement = $db->prepare($query);
-				//$statement->bindValue(":movie_title", $movie, PDO::PARAM_STR);
+
 				$statement->execute();
 				$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-				
-				//echo 'queried!';
+
 				// Printing results in HTML
-				echo '<table id="dblist"><th>creation date</th><th>last modified</th><th>author</th>';
+				echo '<table id="dblist"><th>movie (placeholder id)</th><th>creation date</th><th>last modified</th><th>author</th>';
 				foreach ($results as $row) {
-					echo '<tr><td>' . $row[creationdate] . '</td><td>'. $row[lasteditdate]. '</td><td>'. $row[accountname] . '</td></tr><br/>';
+					echo '<tr><td>'. $row[moviedbnumber] . '</td><td>' $row[creationdate] . '</td><td>'. $row[lasteditdate]. '</td><td>'. $row[accountname] . '</td><td><button type="button" onclick=showreviews('. $row[id]. ')>show edits</button></td></tr><placeholder id=ins'.$row[id].'></placeholder><br/>';
 				
 				}	
 				echo "</table>";
-				/*echo "<table>\n";
-				foreach ($results as $row) {
-					echo "<li><p>" . $row['accountname'] . "</p></li>";
-				}*/
-				
-				/*while ($line = pg_fetch_array($results, null, PGSQL_ASSOC)) {
-					echo "\t<tr>\n";
-					foreach ($results as $col_value) {
-						echo "\t\t<td>$col_value</td>\n";
-					}
-					echo "\t</tr>\n";
-				}
-				echo "</table>\n";
-				echo "made it this far!";*/
-				// Free resultset
-				//pg_free_result($result);
 
-				
-				
-				//$conn->close();
 			?>
 		 </div>
 	  </div>
