@@ -15,7 +15,7 @@
 			</h2>
 			</myp>
 			<div class="container">
-				<form id="form" action="submitReview.php">
+				<form id="form" action="submitreview.php">
 					<input type="text" name="editset" value="<?php echo $q?>" readonly hidden><br>
 					Title:<br>
 					<input type="text" name="title"><br>
