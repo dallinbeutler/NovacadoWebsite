@@ -58,17 +58,18 @@
 				$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 				// Printing results in HTML
+				echo '<div id ="dblist">';
 				echo '<table id="dblist"><th>movie (placeholder id)</th><th>creation date</th><th>last modified</th><th>author</th>';
 				foreach ($results as $row) {
 					echo '<tr><td>'. $row[moviedbnumber] 
 					. '</td><td>'. $row[creationdate] 
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 
-					. '</td><td><button type="button" onclick=showreviews('. $row[id]. ')>show edits</button></td></tr></table><div id=ins'.$row[id].'></div><table>';
+					. '</td><td><button type="button" onclick=showreviews('. $row[id]. ')>show edits</button></td></tr></table><div id=ins'.$row[id].'></div><table ">';
 				
 				}	
 				echo "</table>";
-
+				echo '</div>';
 			?>
 		 </div>
 	  </div>
