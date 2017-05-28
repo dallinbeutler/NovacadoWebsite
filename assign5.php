@@ -5,32 +5,30 @@
     <title> assignment 5 </title>
 	<script>
 		function showreviews(str) {
-		if (str == "") {
-			document.getElementById("txtHint").innerHTML = "";
-			return;
-		} else { 
-        if (window.XMLHttpRequest) {
-            // code for IE7+, Firefox, Chrome, Opera, Safari
-            xmlhttp = new XMLHttpRequest();
-        } else {
-            // code for IE6, IE5
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("ins" + str ).innerHTML = this.responseText;
-            }
-        };
-        xmlhttp.open("GET","getmovieinfo.php?q="+str,true);
-        xmlhttp.send();
-    }
-}
-</script>
+			if (str == "") {
+				document.getElementById("txtHint").innerHTML = "";
+				return;
+			} else { 
+			if (window.XMLHttpRequest) {
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp = new XMLHttpRequest();
+			} else {
+				// code for IE6, IE5
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("ins" + str ).innerHTML = this.responseText;
+				}
+			};
+			xmlhttp.open("GET","getmovieinfo.php?q="+str,true);
+			xmlhttp.send();
+		}
+	}
+	</script>
    </head>
    <body>
-      <?php 
-	  include 'headbar.php';
-	  ?>
+      <?php include 'headbar.php'; ?>
 	  <div id="centerArea">
 	     <div id="mainArea">
             <myp class="center"><h2>Uploads</h2></myp>		
