@@ -19,7 +19,7 @@ th {text-align: left;}
 
 <?php
 	$q = intval($_GET['q']);
-/*
+
 	$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
 	$username = "fmtextbjvwjlcy";
 	$password = "6ac6980946253a82ad6759afe6c2828659ca889e406e9afeeacd53d34283a17c";
@@ -35,7 +35,7 @@ th {text-align: left;}
 		echo "Error connecting to the db. Details: $ex";
 		die();
 		}
-*/
+
 	//$query = 'SELECT * FROM account';
 	//$query = 'SELECT name, birthday, pictureUrl FROM actor a INNER JOIN movieActor ma ON a.id = ma.actorId INNER JOIN movie m ON m.id = ma.movieId WHERE m.title = :movie_title';
 	$query = 'SELECT mesr.creationdate, mesr.lasteditdate, mesr.title, mesr.stars,mesr.description, acc.accountname FROM movieeditsetreview  mesr INNER JOIN account acc ON acc.id = mesr.account_id WHERE mes.id ='.$q;
