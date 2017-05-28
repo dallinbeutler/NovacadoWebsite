@@ -16,7 +16,6 @@ th {text-align: left;}
 </style>
 </head>
 <body>
-hello
 <?php
 	$q = intval($_GET['q']);
 
@@ -35,7 +34,6 @@ hello
 		echo "Error connecting to the db. Details: $ex";
 		die();
 		}
-	echo "connected!";
 	//$query = 'SELECT * FROM account';
 	//$query = 'SELECT name, birthday, pictureUrl FROM actor a INNER JOIN movieActor ma ON a.id = ma.actorId INNER JOIN movie m ON m.id = ma.movieId WHERE m.title = :movie_title';
 	$query = 'SELECT mesr.creationdate, mesr.lasteditdate, mesr.title, mesr.stars,mesr.description, acc.accountname FROM movieeditsetreview  mesr INNER JOIN account acc ON acc.id = mesr.account_id WHERE mesr.movieeditset_id ='.$q;
@@ -43,7 +41,6 @@ hello
 
 	$statement->execute();
 	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-	echo 'queried! </br>';
 	echo "<table>
 	<tr>
 	<th>title</th>
