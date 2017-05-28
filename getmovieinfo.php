@@ -25,10 +25,11 @@
 	//$query = 'SELECT * FROM account';
 	//$query = 'SELECT name, birthday, pictureUrl FROM actor a INNER JOIN movieActor ma ON a.id = ma.actorId INNER JOIN movie m ON m.id = ma.movieId WHERE m.title = :movie_title';
 	
-	$sql = "SELECT count(*) FROM movieeditsetreview mesr WHERE mesr.movieeditset_id ='.$q"; 
+	$sql = 'SELECT count(*) FROM movieeditsetreview WHERE movieeditset_id ='.$q; 
 	$result = $db->prepare($sql); 
 	$result->execute(); 
 	$number_of_rows = $result->fetchColumn(); 
+	echo "first query <br>";
 	if($count == 0){
 		echo "no reviews yet!";		
 	}		
