@@ -16,36 +16,36 @@
 			</myp>
 			<div class="container">
 				<form id="form" action="submitReview.php">
-					<input type="text" name="country" value="<?php echo $q?>" readonly ><br>
+					<input type="text" name="editset" value="<?php echo $q?>" readonly hidden><br>
 					Title:<br>
 					<input type="text" name="title"><br>
 
 					
 					<h2>Rate the edit:</h2>
 					<rad>
-						<input type="radio" id="option1" name="selector">
+						<input type="radio" id="option1" name="selector" value ="1" required>
 						<label for="option1">rotten</label>
 						<div class="check"></div>
 					</rad>
 				  
 					<rad>
-						<input type="radio" id="option2" name="selector">
+						<input type="radio" id="option2" name="selector" value ="2" required>
 						<label for="option2">lacking</label>
 						<div class="check"><div class="inside"></div></div>
 					</rad>
 					  
 					<rad>
-						<input type="radio" id="option3" name="selector">
+						<input type="radio" id="option3" name="selector" value ="3" required>
 						<label for="option3">average</label>
 						<div class="check"><div class="inside"></div></div>
 					</rad>
 					<rad>
-						<input type="radio" id="option4" name="selector">
+						<input type="radio" id="option4" name="selector" value ="4" required>
 						<label for="option4">ripe</label>
 						<div class="check"><div class="inside"></div></div>
 					</rad>
 					<rad>
-						<input type="radio" id="option5" name="selector">
+						<input type="radio" id="option5" name="selector" value ="5" required>
 						<label for="option5">excellent</label>
 						<div class="check"><div class="inside"></div></div>
 					</rad>
@@ -57,25 +57,7 @@
 				<br>
 				<input type="reset">   <input type="submit">
 				</form>
-			</div>
-			<?php /*
-			if(!is_int($q))
-				die('invalid request');
-			$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
-			$username = "fmtextbjvwjlcy";
-			$password = "6ac6980946253a82ad6759afe6c2828659ca889e406e9afeeacd53d34283a17c";
-			$dbname = "dmns5jadj6q0l";
-
-			try {
-				$db = new PDO("pgsql:host=$servername;port=5432;dbname=$dbname", $username, $password);
-				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-			} 	
-			catch (PDOException $ex) {
-				echo "Error connecting to the db. Details: $ex";
-				die();
-			}
-				*/?>
+			</div>		
 		</div>
 	  </div>	  
    </body>
