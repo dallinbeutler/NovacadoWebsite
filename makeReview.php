@@ -51,6 +51,7 @@
 					<hr>
 					review:<br>
 					<textarea rows="4" cols="50" name="comment" form="form">How well did the edit serve your needs?</textarea>
+				<input type="reset"><input type="submit">
 				</form>
 			</div>
 			<?php /*$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
