@@ -44,7 +44,7 @@
     echo "<td>";
 		for ($i = 0; $i < $row['stars']; $i++){
 		echo '<img src="novacado_pit.png" alt="avacados" class="iconsize">';
-	}.
+	}
 	echo "</td>";
     echo "<td>" . $row['lasteditdate'] . "</td>";
     echo "<td>" . $row['description'] . "</td>";
