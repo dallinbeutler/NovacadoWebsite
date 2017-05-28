@@ -72,7 +72,9 @@ table{
 	background-color: #80C04A;
 }
 .review{
-	border: solid 5px black;
+	border: solid 1px black;
+	padding:0px;
+	margin: 0px;
 }
 #squaredOne {
   width: 28px;
