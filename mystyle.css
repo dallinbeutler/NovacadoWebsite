@@ -71,7 +71,9 @@ table{
 .edit:nth-of-type(odd) {
 	background-color: #80C04A;
 }
-
+#review{
+	border: solid 5px black;
+}
 #squaredOne {
   width: 28px;
   height: 28px;

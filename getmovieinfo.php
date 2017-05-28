@@ -29,7 +29,7 @@
 
 	$statement->execute();
 	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-	echo "<table>
+	echo '<table class="review">';
 	<tr>
 	<th>title</th>
 	<th>reviewer</th>
