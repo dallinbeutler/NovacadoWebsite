@@ -8,7 +8,11 @@
 			if (str == "") {
 				document.getElementById("txtHint").innerHTML = "";
 				return;
-			} else { 
+			} 
+			else if (!document.getElementById("checkbox" + str).checked){
+				document.getElementById("ins" + str ).innerHTML = "";
+			}
+			else { 
 			if (window.XMLHttpRequest) {
 				// code for IE7+, Firefox, Chrome, Opera, Safari
 				xmlhttp = new XMLHttpRequest();
@@ -65,7 +69,12 @@
 					. '</td><td>'. $row[creationdate] 
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 
-					. '</td><td><button type="button" onclick=showreviews('. $row[id]. ')>show reviews</button>'
+					. '</td><td>'
+					.'toggle reviews'
+					.'<label class="switch">'
+					.'<input type="checkbox" id=checkbox'.$row[id].' onclick=showreviews('. $row[id]. ')>'
+					.' <div class="slider"></div>'
+					.'</label>'
 					. '</td></tr><tr><td colspan=5><div id=ins'.$row[id].'></div></td></tr>';
 				
 				}	
