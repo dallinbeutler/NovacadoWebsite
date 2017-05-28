@@ -34,7 +34,7 @@
 	<th>title</th>
 	<th>reviewer</th>
 	<th>rating</th>
-	<th>lasteditdate</th>
+	<th>last edit date</th>
 	<th>description</th>
 	</tr>";
 	foreach ($results as $row) {
