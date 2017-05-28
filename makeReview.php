@@ -22,29 +22,29 @@
 					
 					<h2>Rate the edit:</h2>
 					<rad>
-						<input type="radio" id="option" name="selector">
+						<input type="radio" id="option1" name="selector">
 						<label for="f-option">rotten</label>
 						<div class="check"></div>
 					</rad>
 				  
 					<rad>
-						<input type="radio" id="option" name="selector">
+						<input type="radio" id="option2" name="selector">
 						<label for="s-option">lacking</label>
 						<div class="check"><div class="inside"></div></div>
 					</rad>
 					  
 					<rad>
-						<input type="radio" id="option" name="selector">
+						<input type="radio" id="option3" name="selector">
 						<label for="t-option">average</label>
 						<div class="check"><div class="inside"></div></div>
 					</rad>
 					<rad>
-						<input type="radio" id="option" name="selector">
+						<input type="radio" id="option4" name="selector">
 						<label for="t-option">ripe</label>
 						<div class="check"><div class="inside"></div></div>
 					</rad>
 					<rad>
-						<input type="radio" id="option" name="selector">
+						<input type="radio" id="option5" name="selector">
 						<label for="t-option">excellent</label>
 						<div class="check"><div class="inside"></div></div>
 					</rad>
