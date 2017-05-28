@@ -20,29 +20,37 @@
 					<input type="text" name="title"><br>
 
 					
-					<h2>Tomorrow I want some:</h2>
-				  <rad>
-					<input type="radio" id="f-option" name="selector">
-					<label for="f-option">Pizza</label>
-					<div class="check"></div>
+					<h2>Rate the edit:</h2>
+					<rad>
+						<input type="radio" id="option" name="selector">
+						<label for="f-option">rotten</label>
+						<div class="check"></div>
 					</rad>
 				  
-				  <rad>
-					<input type="radio" id="s-option" name="selector">
-					<label for="s-option">Bacon</label>
-					<div class="check"><div class="inside"></div></div>
-				  </rad>
-				  
-				  <rad>
-					<input type="radio" id="t-option" name="selector">
-					<label for="t-option">Cats</label>
-					<div class="check"><div class="inside"></div></div>
-				  </rad>
-
-				
+					<rad>
+						<input type="radio" id="option" name="selector">
+						<label for="s-option">lacking</label>
+						<div class="check"><div class="inside"></div></div>
+					</rad>
+					  
+					<rad>
+						<input type="radio" id="option" name="selector">
+						<label for="t-option">average</label>
+						<div class="check"><div class="inside"></div></div>
+					</rad>
+					<rad>
+						<input type="radio" id="option" name="selector">
+						<label for="t-option">ripe</label>
+						<div class="check"><div class="inside"></div></div>
+					</rad>
+					<rad>
+						<input type="radio" id="option" name="selector">
+						<label for="t-option">excellent</label>
+						<div class="check"><div class="inside"></div></div>
+					</rad>
+					<hr>
 					review:<br>
-					<textarea rows="4" cols="50" name="comment" form="form">
-					Enter text here...</textarea>
+					<textarea rows="4" cols="50" name="comment" form="form">How well did the edit serve your needs?</textarea>
 				</form>
 			</div>
 			<?php /*$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";

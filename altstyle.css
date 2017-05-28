@@ -4,6 +4,7 @@ body, html{
   height: 100%;
   background: #222222;
 	font-family: 'Lato', sans-serif;
+	color: #CCCCCC;
 }
 
 .container{
@@ -16,7 +17,7 @@ body, html{
 }
 
 h2 {
-	color: #AAAAAA;
+	color: #CCCCCC;
 }
 
 .container ul{
@@ -27,12 +28,12 @@ h2 {
 }
 
 rad{
-  color: #AAAAAA;
+  color: #CCCCCC;
   display: block;
   position: relative;
   float: left;
   width: 100%;
-  height: 50px;
+  height: 40px;
 	border-bottom: 1px solid #333;
 }
 
