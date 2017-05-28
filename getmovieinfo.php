@@ -30,7 +30,7 @@
 	$result->execute(); 
 	$number_of_rows = $result->fetchColumn(); 
 	echo "first query <br>";
-	if($count == 0){
+	if($$number_of_rows == 0){
 		echo "no reviews yet!";		
 	}		
 	else{
