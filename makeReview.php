@@ -50,8 +50,8 @@
 					</rad>
 					<br>
 					<br>
-					<hr>
-					review:<br>
+
+					comments:<br>
 					<textarea rows="4" cols="50" name="comment" form="form">How well did the edit serve your needs?</textarea>
 				<br>
 				<input type="reset">   <input type="submit">
