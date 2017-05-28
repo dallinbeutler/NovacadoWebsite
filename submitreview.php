@@ -5,6 +5,7 @@
 	$description = htmlspecialchars($_GET["comment"]);
 	if(!is_int($q))
 		die('invalid request');
+	
 	$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
 	$username = "fmtextbjvwjlcy";
 	$password = "6ac6980946253a82ad6759afe6c2828659ca889e406e9afeeacd53d34283a17c";
@@ -18,4 +19,14 @@
 		echo "Error connecting to the db. Details: $ex";
 		die();
 	}
+	
+	$query = "INSERT INTO movieeditsetreview (account, creationdate, lasteditdate, title, stars, description)
+VALUES (6, now(), now(),':title',':rating',':description');";
+	$statement = $db->prepare($query);
+	$statement->bindParam(':title', $title);
+	$statement->bindParam(':rating', $rating);
+	$statement->bindParam(':description', $description);
+	$statement->execute();
+	//$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+	echo "success!";
 ?>
