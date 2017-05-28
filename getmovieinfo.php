@@ -39,8 +39,6 @@
 
 		$statement->execute();
 		$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-		
-		$count = $results->rowCount();
 	
 		echo '<table class="review">
 		<tr>
