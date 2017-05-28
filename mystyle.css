@@ -75,6 +75,7 @@ table{
 	border: solid 1px black;
 	padding:0px;
 	margin: 0px;
+	width: 100%;
 }
 #squaredOne {
   width: 28px;
