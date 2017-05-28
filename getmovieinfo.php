@@ -29,7 +29,6 @@
 	$result = $db->prepare($sql); 
 	$result->execute(); 
 	$number_of_rows = $result->fetchColumn(); 
-	echo "first queryd <br>";
 	if($number_of_rows == 0){
 		echo "no reviews yet!";		
 	}		
