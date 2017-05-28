@@ -3,8 +3,8 @@
 	$title = htmlspecialchars($_GET["title"]);
 	$rating = intval($_GET['selector']);
 	$description = htmlspecialchars($_GET["comment"]);
-	if(!is_int($editset))
-		die('invalid request');
+	//if(!is_int($editset))
+	//	die('invalid request');
 	
 	$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
 	$username = "fmtextbjvwjlcy";
@@ -20,9 +20,10 @@
 		die();
 	}
 	
-	$query = "INSERT INTO movieeditsetreview (account, creationdate, lasteditdate, title, stars, description)
-VALUES (6, NOW(), NOW(),':title',':rating',':description');";
+	$query = "INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
+VALUES (6,':editset' NOW(), NOW(),':title',':rating',':description');";
 	$statement = $db->prepare($query);
+	$statement->bindParam(':editset', $editset);
 	$statement->bindParam(':title', $title);
 	$statement->bindParam(':rating', $rating);
 	$statement->bindParam(':description', $description);
