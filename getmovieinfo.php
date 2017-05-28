@@ -24,13 +24,23 @@
 		}
 	//$query = 'SELECT * FROM account';
 	//$query = 'SELECT name, birthday, pictureUrl FROM actor a INNER JOIN movieActor ma ON a.id = ma.actorId INNER JOIN movie m ON m.id = ma.movieId WHERE m.title = :movie_title';
-	$query = 'SELECT mesr.creationdate, mesr.lasteditdate, mesr.title, mesr.stars,mesr.description, acc.accountname FROM movieeditsetreview  mesr INNER JOIN account acc ON acc.id = mesr.account_id WHERE mesr.movieeditset_id ='.$q;
-	$statement = $db->prepare($query);
+	
+	$sql = "SELECT count(*) FROM movieeditsetreview mesr WHERE mesr.movieeditset_id ='.$q"; 
+	$result = $db->prepare($sql); 
+	$result->execute(); 
+	$number_of_rows = $result->fetchColumn(); 
+	if($count == 0){
+		echo "no reviews yet!";		
+	}		
+	else{
+		$query = 'SELECT mesr.creationdate, mesr.lasteditdate, mesr.title, mesr.stars,mesr.description, acc.accountname FROM movieeditsetreview  mesr INNER JOIN account acc ON acc.id = mesr.account_id WHERE mesr.movieeditset_id ='.$q;
+		$statement = $db->prepare($query);
 
-	$statement->execute();
-	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-	$count = $results->rowCount();
-	if($count > 0){
+		$statement->execute();
+		$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+		
+		$count = $results->rowCount();
+	
 		echo '<table class="review">
 		<tr>
 		<th>title</th>
@@ -53,9 +63,7 @@
 		echo "</tr>";
 		}
 		echo "</table>";
-		}
-	else
-		echo "no reviews yet!";
+}
 ?>
 </body>
 </html>
