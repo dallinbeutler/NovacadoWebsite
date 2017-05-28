@@ -38,7 +38,7 @@
 	<th>description</th>
 	</tr>';
 	foreach ($results as $row) {
-		echo "<tr>";
+		echo '<tr class="edit">';
 		echo "<td>" . $row['title'] . "</td>";
     echo "<td>" . $row['accountname'] . "</td>";
     echo "<td>" . $row['stars'] . "</td>";
