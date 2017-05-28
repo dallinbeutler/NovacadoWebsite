@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 /*
 background-color: #134414;
+	background-color: #003000;
 */
 body, html{
 	height: 100%;
@@ -182,7 +183,8 @@ table{
 	width:100%;
 }
 #mainArea{
-	background-color: #003000;
+
+	background-color: #134414;
 	border-radius: 20px;
     top: 20%;
 	padding: 30px;
