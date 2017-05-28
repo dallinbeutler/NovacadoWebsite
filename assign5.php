@@ -70,10 +70,10 @@
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 
 					. '</td><td>'
-					.'toggle reviews'
+					.'reviews '
 					.'<label class="switch">'
 					.'<input type="checkbox" id=checkbox'.$row[id].' onclick=showreviews('. $row[id]. ')>'
-					.' <div class="slider"></div>'
+					.' <div class="slider round"></div>'
 					.'</label>'
 					. '</td></tr><tr><td colspan=5><div id=ins'.$row[id].'></div></td></tr>';
 				
