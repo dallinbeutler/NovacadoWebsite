@@ -49,6 +49,7 @@
 						<div class="check"><div class="inside"></div></div>
 					</rad>
 					<br>
+					<br>
 					<hr>
 					review:<br>
 					<textarea rows="4" cols="50" name="comment" form="form">How well did the edit serve your needs?</textarea>

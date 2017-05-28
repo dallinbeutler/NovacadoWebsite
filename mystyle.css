@@ -63,6 +63,35 @@ table{
 	padding: 5px;
 	min-height: 300px;
 }
+#pictureHolder{
+	width:100%;
+}
+#mainArea{
+
+	background-color: #134414;
+	border-radius: 20px;
+    top: 20%;
+	padding: 30px;
+}
+#submit{
+	background-color: #80C04A;
+	border-width: 3px;
+	border-radius:3px;
+	min-width: 200px;
+	min-height: 40px;
+}
+myp{
+	color: white;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 20px;
+	width: 80%;
+}
+form{
+	margin: 0;
+}
+
+
+
 .centered{
 
     text-align: center;
@@ -179,32 +208,7 @@ table{
   } 
 }
 
-#pictureHolder{
-	width:100%;
-}
-#mainArea{
 
-	background-color: #134414;
-	border-radius: 20px;
-    top: 20%;
-	padding: 30px;
-}
-#submit{
-	background-color: #80C04A;
-	border-width: 3px;
-	border-radius:3px;
-	min-width: 200px;
-	min-height: 40px;
-}
-myp{
-	color: white;
-	font-family: "Arial Black", Gadget, sans-serif;
-	font-size: 20px;
-	width: 80%;
-}
-form{
-	margin: 0;
-}
 
 
 .switch {
