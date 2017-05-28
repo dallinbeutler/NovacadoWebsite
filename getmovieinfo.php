@@ -29,14 +29,14 @@
 
 	$statement->execute();
 	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-	echo '<table class="review">';
+	echo '<table class="review">
 	<tr>
 	<th>title</th>
 	<th>reviewer</th>
 	<th>rating</th>
 	<th>last edit date</th>
 	<th>description</th>
-	</tr>";
+	</tr>';
 	foreach ($results as $row) {
 		echo "<tr>";
 		echo "<td>" . $row['title'] . "</td>";
