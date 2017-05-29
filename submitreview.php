@@ -23,21 +23,21 @@
 	$query = "INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
 VALUES ('6',':editset', '2012-08-06', '2012-08-06',':title',':rating',':description')";
 	$statement = $db->prepare($query);
-	
+	/*
 	$statement->execute(array(
 	"editset" =>$editset,
 	"title" =>$title,
 	"rating" =>$rating,
 	"description" =>$description
 	));
-
+	*/
 	
-	/*$statement->bindParam(':editset', $editset, PDO::PARAM_INT);
+	$statement->bindParam(':editset', $editset, PDO::PARAM_INT);
 	$statement->bindParam(':title', $title, PDO::PARAM_STR);
 	$statement->bindParam(':rating', $rating, PDO::PARAM_INT);
 	$statement->bindParam(':description', $description, PDO::PARAM_STR);
-	$statement->execute();
-	$statement->commit();*/
+	//$statement->execute();
+	//$statement->commit();
 	
 	//$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 	echo "success!";
