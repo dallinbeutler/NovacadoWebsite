@@ -25,7 +25,7 @@ VALUES ('6',?, '2012-08-06', '2012-08-06',?,?,?)";
 	$statement->bindValue(3, $rating);
 	$statement->bindValue(4, $description);
 	
-	$statement->execute();
+	//$statement->execute();
 ?>
 <html>
     <head>
