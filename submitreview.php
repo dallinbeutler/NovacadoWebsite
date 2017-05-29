@@ -21,7 +21,7 @@
 	}
 	
 	$query = 'INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
-VALUES (6,":editset", NOW(), NOW(),":title",":rating",":description")';
+VALUES ("6",":editset", NOW(), NOW(),":title",":rating",":description")';
 	$statement = $db->prepare($query);
 	$statement->bindParam(':editset', $editset, PDO::PARAM_INT);
 	$statement->bindParam(':title', $title, PDO::PARAM_STR);
