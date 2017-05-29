@@ -25,9 +25,8 @@
 	$query = "INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
 VALUES (?,':editset', '2012-08-06', '2012-08-06',?,?,?)";
 	$statement = $db->prepare($query);
-	
-	
-	$statement->execute(array($editset, $title, $rating, $description));
+
+	//$statement->execute(array($editset, $title, $rating, $description));
 	/*
 	$statement->execute(array(
 	"editset" =>$editset,
@@ -42,16 +41,18 @@ VALUES (?,':editset', '2012-08-06', '2012-08-06',?,?,?)";
 	$statement->bindParam(':rating', $rating, PDO::PARAM_INT);
 	$statement->bindParam(':description', $description, PDO::PARAM_STR);
 	*/
-	/*$statement->bindValue(1, $editset);
+	$statement->bindValue(1, $editset);
 	$statement->bindValue(2, $title);
 	$statement->bindValue(3, $rating);
 	$statement->bindValue(4, $description);
-	*/
+	
 	//$statement->execute();
 	//$statement->commit();
 	
 	//$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-	echo '<html>
+
+?>
+<html>
     <head>
 		<link rel="stylesheet" type="text/css" href="mystyle.css">
 		<link rel="stylesheet" type="text/css" href="altstyle.css">
@@ -60,5 +61,4 @@ VALUES (?,':editset', '2012-08-06', '2012-08-06',?,?,?)";
     <body>
         <h1>Successfully added! Redirecting in 3 seconds...</h1>
     </body>
-</html>';
-?>
+</html>
