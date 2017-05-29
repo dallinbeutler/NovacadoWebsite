@@ -50,6 +50,8 @@ VALUES ('?',':editset', '2012-08-06', '2012-08-06','?','?','?')";
 	//$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 	echo '<html>
     <head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<link rel="stylesheet" type="text/css" href="altstyle.css">
         <meta http-equiv="refresh" content="3;url=https://secure-tor-23408.herokuapp.com/assign5.php" />
     </head>
     <body>
