@@ -23,7 +23,7 @@
 	//$query = "INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
 //VALUES ('6',':editset', '2012-08-06', '2012-08-06',':title',':rating',':description')";
 	$query = "INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
-VALUES (?,':editset', '2012-08-06', '2012-08-06',?,?,?)";
+VALUES ('6',?, '2012-08-06', '2012-08-06',?,?,?)";
 	$statement = $db->prepare($query);
 
 	//$statement->execute(array($editset, $title, $rating, $description));
@@ -46,7 +46,7 @@ VALUES (?,':editset', '2012-08-06', '2012-08-06',?,?,?)";
 	$statement->bindValue(3, $rating);
 	$statement->bindValue(4, $description);
 	
-	//$statement->execute();
+	$statement->execute();
 	//$statement->commit();
 	
 	//$results = $statement->fetchAll(PDO::FETCH_ASSOC);
