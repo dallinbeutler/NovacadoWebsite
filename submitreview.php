@@ -30,12 +30,12 @@ VALUES ('6',':editset', '2012-08-06', '2012-08-06',':title',':rating',':descript
 	"rating" =>$rating,
 	"description" =>$description
 	));
-	*/
+	
 	
 	$statement->bindParam(':editset', $editset, PDO::PARAM_INT);
 	$statement->bindParam(':title', $title, PDO::PARAM_STR);
 	$statement->bindParam(':rating', $rating, PDO::PARAM_INT);
-	$statement->bindParam(':description', $description, PDO::PARAM_STR);
+	$statement->bindParam(':description', $description, PDO::PARAM_STR);*/
 	//$statement->execute();
 	//$statement->commit();
 	
