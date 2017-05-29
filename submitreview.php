@@ -44,7 +44,7 @@ VALUES (?,':editset', '2012-08-06', '2012-08-06',?,?,?)";
 	$statement->bindParam(3, $rating);
 	$statement->bindParam(4, $description);
 	
-	$statement->execute();
+	//$statement->execute();
 	//$statement->commit();
 	
 	//$results = $statement->fetchAll(PDO::FETCH_ASSOC);
