@@ -1,6 +1,6 @@
 <?php
 	$editset = intval($_GET['editset']);
-	$title = htmlspecialchars($_GET["title"]);
+	$title = htmlspecialchars($_GET['title']);
 	$rating = intval($_GET['selector']);
 	$description = htmlspecialchars($_GET["comment"]);
 	
@@ -25,7 +25,7 @@ VALUES ('6',?, '2012-08-06', '2012-08-06',?,?,?)";
 	$statement->bindValue(3, $rating);
 	$statement->bindValue(4, $description);
 	
-	//$statement->execute();
+	$statement->execute();
 ?>
 <html>
     <head>
