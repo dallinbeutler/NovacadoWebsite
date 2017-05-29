@@ -20,8 +20,10 @@
 		die();
 	}
 
+	//$query = "INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
+//VALUES ('6',':editset', '2012-08-06', '2012-08-06',':title',':rating',':description')";
 	$query = "INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
-VALUES ('6',':editset', '2012-08-06', '2012-08-06',':title',':rating',':description')";
+VALUES (?,':editset', '2012-08-06', '2012-08-06',?,?,?)";
 	$statement = $db->prepare($query);
 	/*
 	$statement->execute(array(
@@ -34,8 +36,14 @@ VALUES ('6',':editset', '2012-08-06', '2012-08-06',':title',':rating',':descript
 	
 	$statement->bindParam(':editset', $editset, PDO::PARAM_INT);
 	$statement->bindParam(':title', $title, PDO::PARAM_STR);
-	$statement->bindParam(':rating', $rating, PDO::PARAM_INT);*/
-	$statement->bindValue(':description', $description, PDO::PARAM_STR);
+	$statement->bindParam(':rating', $rating, PDO::PARAM_INT);
+	$statement->bindParam(':description', $description, PDO::PARAM_STR);
+	*/
+	$statement->bindParam(1, $editset);
+	$statement->bindParam(2, $title);
+	$statement->bindParam(3, $rating);
+	$statement->bindParam(4, $description);
+	
 	//$statement->execute();
 	//$statement->commit();
 	
