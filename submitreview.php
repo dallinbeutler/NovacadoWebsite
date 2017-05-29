@@ -18,7 +18,7 @@
 		die();
 	}
 	$query = "INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
-VALUES ('6',?, '2012-08-06', '2012-08-06',?,?,?)";
+VALUES ('6',?, NOW(), NOW(),?,?,?)";
 	$statement = $db->prepare($query);
 	$statement->bindValue(1, $editset);
 	$statement->bindValue(2, $title);
