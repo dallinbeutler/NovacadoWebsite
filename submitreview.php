@@ -23,7 +23,7 @@
 	//$query = "INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
 //VALUES ('6',':editset', '2012-08-06', '2012-08-06',':title',':rating',':description')";
 	$query = "INSERT INTO movieeditsetreview (account_id, movieeditset_id, creationdate, lasteditdate, title, stars, description)
-VALUES (?,':editset', '2012-08-06', '2012-08-06',?,?,?)";
+VALUES ('?',':editset', '2012-08-06', '2012-08-06','?','?','?')";
 	$statement = $db->prepare($query);
 	/*
 	$statement->execute(array(
