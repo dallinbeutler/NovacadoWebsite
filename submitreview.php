@@ -48,5 +48,12 @@ VALUES (?,':editset', '2012-08-06', '2012-08-06',?,?,?)";
 	//$statement->commit();
 	
 	//$results = $statement->fetchAll(PDO::FETCH_ASSOC);
-	echo "success!";
+	echo '<html>
+    <head>
+        <meta http-equiv="refresh" content="3;url=https://secure-tor-23408.herokuapp.com/assign5.php" />
+    </head>
+    <body>
+        <h1>Successfully added! Redirecting in 3 seconds...</h1>
+    </body>
+</html>';
 ?>
