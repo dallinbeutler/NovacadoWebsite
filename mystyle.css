@@ -13,9 +13,15 @@ body, html{
 body{
 
 }
-td{
-	margin: 5px auto;
+tr{
+	margin: auto;
 	position: relative;
+
+}
+td{
+	margin: auto;
+	position: relative;
+
 }
 .topbar:hover{
    background-color: #80A52C;
