@@ -16,7 +16,7 @@ body{
 tr{
 	margin: auto;
 	position: relative;
-
+	text-align: center;
 }
 td{
 	margin: auto;
