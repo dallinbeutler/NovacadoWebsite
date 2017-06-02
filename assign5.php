@@ -63,9 +63,16 @@
 
 				// Printing results in HTML
 				echo '<div id ="dblist">';
-				echo '<table id="dblist"><th>movie (placeholder id)</th><th>creation date</th><th>last modified</th><th>author</th>';
+				echo '<table id="dblist">
+						<th> Download  </td>"
+						<th>movie (placeholder id)</th>
+						<th>creation date</th>
+						<th>last modified</th>
+						<th>author</th>';
 				foreach ($results as $row) {
-					echo '<tr><td>'. $row[moviedbnumber] 
+					echo '<tr>'
+					. '<td><a href="error.php"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Download_alt_font_awesome.svg/768px-Download_alt_font_awesome.svg.png" alt="Download" style="width:32px;height:32px;"> </a>
+					. '</td><td>'. $row[moviedbnumber] 
 					. '</td><td>'. $row[creationdate] 
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 

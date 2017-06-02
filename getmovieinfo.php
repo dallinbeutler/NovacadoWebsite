@@ -48,15 +48,16 @@
 		foreach ($results as $row) {
 			echo '<tr class="edit">';
 			echo "<td>" . $row['title'] . "</td>";
-		echo "<td>" . $row['accountname'] . "</td>";
-		echo "<td>";
+			echo "<td>" . $row['accountname'] . "</td>";
+			echo "<td>";
 			for ($i = 0; $i < $row['stars']; $i++){
-			echo '<img src="novacado_pit.png" alt="avacados" class="iconsize">';
-		}
-		echo "</td>";
-		echo "<td>" . $row['lasteditdate'] . "</td>";
-		echo "<td>" . $row['description'] . "</td>";
-		echo "</tr>";
+				echo '<img src="novacado_pit.png" alt="avacados" class="iconsize">';
+			}
+			echo "</td>";
+			echo "<td>" . $row['lasteditdate'] . "</td>";
+			echo "<td>" . $row['description'] . "</td>";
+
+			echo "</tr>";
 		}
 		echo "</table><br>";
 		
