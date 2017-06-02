@@ -13,6 +13,9 @@ body, html{
 body{
 
 }
+td{
+	margin: 10px auto;
+}
 .topbar:hover{
    background-color: #80A52C;
    font-weight: 500;
