@@ -13,10 +13,13 @@ body, html{
 body{
 
 }
+
 tr{
 	margin: auto;
 	position: relative;
 	text-align: center;
+	height: 40;
+	line-height: 40;
 }
 td{
 	margin: auto;
