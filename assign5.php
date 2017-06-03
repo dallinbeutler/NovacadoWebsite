@@ -65,7 +65,7 @@
 				echo '<div id ="dblist">';
 				echo '<table id="dblist">
 						<th> Download  </td>
-						<th>movie (placeholder id)</th>
+						<th>movie (placeholder)</th>
 						<th>creation date</th>
 						<th>last modified</th>
 						<th>author</th>
