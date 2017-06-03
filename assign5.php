@@ -68,7 +68,8 @@
 						<th>movie (placeholder id)</th>
 						<th>creation date</th>
 						<th>last modified</th>
-						<th>author</th>';
+						<th>author</th>
+						<th>Reviews toggle</th>';
 				foreach ($results as $row) {
 					echo '<tr>'
 					. '<td><a href="error.php"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Download_alt_font_awesome.svg/768px-Download_alt_font_awesome.svg.png" alt="Download" style="width:32px;height:32px;"> </a>'
@@ -77,7 +78,7 @@
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 
 					. '</td><td>'
-					.'reviews '
+					//.'reviews '
 					.'<label class="switch">'
 					.'<input type="checkbox" id=checkbox'.$row[id].' onclick=showreviews('. $row[id]. ')>'
 					.' <div class="slider round"></div>'
