@@ -18,7 +18,7 @@
 					</tr>
 				</table>
 
-			<div id="right">
+			<div id="right" align="right">
 				<?php include "register.php" ?> 
 				<?php include "login.php" ?> 
 			</div>
