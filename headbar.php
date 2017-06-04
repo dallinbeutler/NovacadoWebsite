@@ -6,6 +6,11 @@
 		<div id="header">
 			<div align="left">
 				<button onclick = "window.location = 'index.php'"><img src="novacado_pit.png" alt="avacados" class="iconsize"></button>
+				<button onclick = "window.location = 'assignList.php'"> Assignments</button>
+				<button onclick = "window.location = 'assignList.php'"> Assignments</button>
+				<button onclick = "window.location = 'assignList.php'"> Assignments</button>
+				<button onclick = "window.location = 'assignList.php'"> Assignments</button>
+				<button onclick = "window.location = 'assignList.php'"> Assignments</button>
 			</div>
 			<div id="right" align="right">
 				<?php include "register.php" ?> 
