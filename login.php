@@ -14,10 +14,10 @@
 
 	</head>
 	<body>
-		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+		<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
 
-		<div id="id01" class="modal">
-		  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+		<div id="id02" class="modal">
+		  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">x</span>
 		  <form class="modal-content animate" action="/action_page.php">
 			<div class="container">
 			  <label><b>Email</b></label>
@@ -28,7 +28,7 @@
 
 			  <input type="checkbox" checked="checked"> Remember me
 			  <div class="clearfix">
-				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
 				<button type="submit" class="signupbtn">Login</button>
 			  </div>
 			</div>
