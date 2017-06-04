@@ -2,7 +2,7 @@
 	<head>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
 	<link rel="icon" href="novacado_pit.png">
-    <title> assignment 5 </title>
+    <title> Edits </title>
 	<script>
 		function showreviews(str) {
 			if (str == "") {
