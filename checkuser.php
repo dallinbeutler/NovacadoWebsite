@@ -22,6 +22,7 @@
 
 				$_SESSION['accname'] = $accname;
 				$_SESSION['phash'] = $row;
+				echo "success!";
 			}
 			else 
 				echo "invalid username and password combo";
