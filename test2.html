@@ -70,7 +70,8 @@
             if (!isNaN(searchYear)) {
                 options.year = searchYear;
             }
-            theMovieDb.search.getMovie(options, successCallback, errorCallback);
+            //theMovieDb.search.getMovie(options, successCallback, errorCallback);
+			theMovieDb.movies.getById( {"id":155 }, successCallback, errorCallback);
         });
 
     </script>

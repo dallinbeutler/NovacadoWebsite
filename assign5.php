@@ -34,30 +34,9 @@
 	}
 	</script>
 	<script type="text/javascript">
-		var asker = "none";
-        // callback for successful getConfiguration call
-        function configSuccessCallback(data) {
-            'use strict';
-            // Set the base image url to the returned base_url value plus w185, shows posters with a width of 185 pixels.
-            // Store it in localStorage so we don't make the configuration call every time.
-            localStorage.setItem('tmdbImageUrlBase', JSON.parse(data).images.base_url + 'w185');
-            document.getElementById("title").innerHTML = "tmdbImageUrlBase downloaded from themoviedb.org: " + localStorage.getItem('tmdbImageUrlBase');
-        }
-        // callback for getConfiguration call error
-        function configErrorCallback(data) {
-            'use strict';
-            document.getElementById("title").innerHTML = "Error getting TMDb configuration! " + JSON.parse(data).status_message;
-        }
-        // check localStorage for imageBaseUrl, download from TMDb if not found
-        if (localStorage.getItem('tmdbImageUrlBase')) {
-            $('#title').text('tmdbImageUrlBase retrieved from localstorage: ' + localStorage.getItem('tmdbImageUrlBase'));
-        } else {
-            theMovieDb.configurations.getConfiguration(configSuccessCallback, configErrorCallback);
-        }
-
-        // callback for successful movie search
         function successCallback(data) {
             'use strict';
+			//https://api.themoviedb.org/3/movie/155?api_key=2b8c6c988082f2afded86703adeccbc8&language=en-US
             document.getElementById("title").text('');
             data = JSON.parse(data);
             //console.log(data);
@@ -71,22 +50,44 @@
                 console.log('Nothing found');
             }
         }
-        // callback for movie search error
-        function errorCallback(data) {
-            'use strict';
-            //console.log('error: \n' + data);
-            document.getElementByID("movietab5").innerHTML ="Error searching. " + JSON.parse(data).status_message;
-        }
 
-        // search button click event handler
-        function searchMovie(inID, inAsker) {
-			asker = inAsker;
-			//var inputoptions = [
-			alert("called!");
-            theMovieDb.movies.getById({"id":76203 }, successCallback, errorCallback);
-			
-        }
+		function showmovie(str) {
+			if (str == "") {
+				document.getElementById("txtHint").innerHTML = "";
+				return;
+			} 
+			else if (!document.getElementById("checkbox" + str).checked){
+				document.getElementById("ins" + str ).innerHTML = "";
+			}
+			else { 
+			if (window.XMLHttpRequest) {
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp = new XMLHttpRequest();
+			} else {
+				// code for IE6, IE5
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("title").innerHTML = this.responseText;
+					data = JSON.parse(this);
 
+					if (data.results && data.results.length > 0) {
+						var imageUrl = localStorage.getItem('tmdbImageUrlBase') + data.results[0].poster_path;
+						document.getElementByID("movietab5").innerHTML = 'Title: <b>' + data.results[0].title + '</b><br />';
+						document.getElementById("movietab" + str).innerHTML += '<img src="' + imageUrl + '" />';
+					} else {
+						document.getElementByID(asker).text('Nothing found');
+						console.log('Nothing found');
+					}
+
+				}
+			};
+
+
+			xmlhttp.open("GET","https://api.themoviedb.org/3/movie/" + str + "?api_key=2b8c6c988082f2afded86703adeccbc8&language=en-US",true);
+			xmlhttp.send();
+		}
     </script>
    </head>
    <body>
@@ -131,7 +132,7 @@
 				foreach ($results as $row) {
 					echo '<tr>'
 					. '<td><a href="error.php"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Download_alt_font_awesome.svg/768px-Download_alt_font_awesome.svg.png" alt="Download" style="width:32px;height:32px;"> </a>'
-					. '</td><td id="movietab'.$row[id]. '" onload="searchMovie('.$row[moviedbnumber] . ',movietab'.$row[id].')">'. $row[moviedbnumber] 
+					. '</td><td id="movietab'.$row[id]. '" onload="searchMovie('.$row[moviedbnumber] .' )">'. $row[moviedbnumber] 
 					. '</td><td>'. $row[creationdate] 
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 
