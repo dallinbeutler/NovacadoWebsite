@@ -24,6 +24,9 @@ td{
 	position: relative;
 
 }
+#pictureholder{
+  height:100%;
+}
 
 #dblist{
 	background-color: #80A52C;
