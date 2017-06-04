@@ -107,7 +107,7 @@
 				foreach ($results as $row) {
 					echo '<tr>'
 					. '<td><a href="error.php"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Download_alt_font_awesome.svg/768px-Download_alt_font_awesome.svg.png" alt="Download" style="width:32px;height:32px;"> </a>'
-					. '</td><td id="movietab'.$row[id]. '" onload="searchMovie('.$row[moviedbnumber] .' )">'. $row[moviedbnumber] 
+					. '</td><td id="movietab'.$row[id]. '" onload="showmovie('.$row[moviedbnumber] .' )">'. $row[moviedbnumber] 
 					. '</td><td>'. $row[creationdate] 
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 
