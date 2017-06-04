@@ -13,5 +13,13 @@
 	catch (PDOException $ex) {
 		echo "Error connecting to the db. Details: $ex";
 		die();
-	}
+		}
+	$query = 'SELECT * FROM account WHERE accountname ="' . $str . '"';
 	
+	$statement->execute();
+	$row = count($results->fetchAll());
+	if ($row > 0)
+		echo 'Name is taken!'
+	else
+		echo 'valid Username!
+?>
