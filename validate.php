@@ -14,8 +14,4 @@
 		echo "Error connecting to the db. Details: $ex";
 		die();
 	}
-	$query = 'SELECT count(*) FROM account WHERE accountname ="' . $str . '"';
 	
-	$statement->execute();
-	echo $statement;
-?>
