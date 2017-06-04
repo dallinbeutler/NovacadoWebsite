@@ -19,6 +19,7 @@ body{
 	position:relative;
 	float: left;
 	margin: 0 0 0 0;
+	width: 100;
 }
 #right{
 	position:relative;
