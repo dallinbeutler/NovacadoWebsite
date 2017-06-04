@@ -65,6 +65,8 @@ a{
 	background-color: #80C04A;
 	padding:0px;
 	margin: 0px;
+	float: left;
+	position: relative;
 }
 
 table{
@@ -376,4 +378,5 @@ button {
 .right{
 	float: right;
 	height: 40px;
+	width: 50%;
 }

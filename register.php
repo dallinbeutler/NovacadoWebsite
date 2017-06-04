@@ -14,8 +14,10 @@
 
 	</head>
 	<body>
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
 		<div id="id01" class="modal">
-		  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
 		  <form class="modal-content animate" action="/action_page.php">
 			<div class="container">
 			  <label><b>Email</b></label>

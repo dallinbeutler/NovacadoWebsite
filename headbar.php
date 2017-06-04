@@ -17,7 +17,7 @@
 				</tr>
 			</table>
 			<div id="right">
-				<?php include "register.php" ?> forasdf
+				<?php include "register.php" ?> 
 			</div>
 		</div>
 	</body>
