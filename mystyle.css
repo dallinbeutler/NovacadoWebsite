@@ -67,6 +67,7 @@ a{
 	margin: 0px;
 	float: left;
 	position: relative;
+	width: 100%;
 }
 
 table{
@@ -377,6 +378,5 @@ button {
 }
 .right{
 	float: right;
-	height: 40px;
-	width: 50%;
+
 }
