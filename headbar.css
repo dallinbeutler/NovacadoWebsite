@@ -28,6 +28,9 @@ body, html{
 	height:100%;
 }
 #pictureHolder{
+	width:100%;
+}
+#pictureHolderv{
 	height:100%;
 }
 
