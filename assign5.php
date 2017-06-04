@@ -41,7 +41,7 @@
             // Set the base image url to the returned base_url value plus w185, shows posters with a width of 185 pixels.
             // Store it in localStorage so we don't make the configuration call every time.
             localStorage.setItem('tmdbImageUrlBase', JSON.parse(data).images.base_url + 'w185');
-            document.getElementById("title")..text('tmdbImageUrlBase downloaded from themoviedb.org: ' + localStorage.getItem('tmdbImageUrlBase'));
+            document.getElementById("title").innerHTML = "tmdbImageUrlBase downloaded from themoviedb.org: " + localStorage.getItem('tmdbImageUrlBase'))";
         }
         // callback for getConfiguration call error
         function configErrorCallback(data) {
