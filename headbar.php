@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		<div id="header">
-			
+			<div align="left">
 				<table>
 					<tr>
 					   <td "id=topbar"><a  href="index.php"><img src="novacado_pit.png" alt="avacados" class="iconsize"></a></td>
@@ -17,7 +17,7 @@
 					   <td></td>
 					</tr>
 				</table>
-
+			</div>
 			<div id="right" align="right">
 				<?php include "register.php" ?> 
 				<?php include "login.php" ?> 
