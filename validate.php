@@ -18,10 +18,7 @@
 	$statement = $db->prepare($query);
 	$statement->bindValue(1, $q);
 	$statement->execute();
-	$row = count($statement->fetchAll());
-	if ($row > 0)
-		echo 'userame is already taken!'
-	else
-		echo 'valid Username!
+	$row = $statement->fetchColumn());
+	echo $row;
 
 ?>
