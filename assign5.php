@@ -81,7 +81,8 @@
         // search button click event handler
         function searchMovie(inID, inAsker) {
 			asker = inAsker;
-            theMovieDb.movies.getById(inID, successCallback, errorCallback);
+			//var inputoptions = [
+            theMovieDb.movies.getById({"id":76203 }, successCallback, errorCallback);
 			alert("called!");
         }
 
