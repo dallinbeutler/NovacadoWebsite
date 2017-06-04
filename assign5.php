@@ -34,32 +34,7 @@
 	}
 	</script>
 	<script type="text/javascript">
-        function successCallback(data) {
-            'use strict';
-			//https://api.themoviedb.org/3/movie/155?api_key=2b8c6c988082f2afded86703adeccbc8&language=en-US
-            document.getElementById("title").text('');
-            data = JSON.parse(data);
-            //console.log(data);
-            // we just take the first result and display it
-            if (data.results && data.results.length > 0) {
-                var imageUrl = localStorage.getItem('tmdbImageUrlBase') + data.results[0].poster_path;
-                document.getElementByID("movietab5").innerHTML = 'Title: <b>' + data.results[0].title + '</b><br />';
-                document.getElementById(asker).innerHTML += '<img src="' + imageUrl + '" />';
-            } else {
-                document.getElementByID(asker).text('Nothing found');
-                console.log('Nothing found');
-            }
-        }
-
 		function showmovie(str) {
-			if (str == "") {
-				document.getElementById("txtHint").innerHTML = "";
-				return;
-			} 
-			else if (!document.getElementById("checkbox" + str).checked){
-				document.getElementById("ins" + str ).innerHTML = "";
-			}
-			else { 
 			if (window.XMLHttpRequest) {
 				// code for IE7+, Firefox, Chrome, Opera, Safari
 				xmlhttp = new XMLHttpRequest();
