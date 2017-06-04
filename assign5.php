@@ -82,6 +82,7 @@
         function searchMovie(inID, inAsker) {
 			asker = inAsker;
             theMovieDb.search.getById(inID, successCallback, errorCallback);
+			alert("called!");
         }
 
     </script>
