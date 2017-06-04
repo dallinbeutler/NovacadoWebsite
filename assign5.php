@@ -64,8 +64,8 @@
             // we just take the first result and display it
             if (data.results && data.results.length > 0) {
                 var imageUrl = localStorage.getItem('tmdbImageUrlBase') + data.results[0].poster_path;
-                document.getElementByID("movietab5").append('Title: <b>' + data.results[0].title + '</b><br />');
-                document.getElementById(asker).append('<img src="' + imageUrl + '" />');
+                document.getElementByID("movietab5").innerHTML = 'Title: <b>' + data.results[0].title + '</b><br />';
+                document.getElementById(asker).innerHTML += '<img src="' + imageUrl + '" />';
             } else {
                 document.getElementByID(asker).text('Nothing found');
                 console.log('Nothing found');
