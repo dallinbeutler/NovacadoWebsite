@@ -41,12 +41,12 @@
             // Set the base image url to the returned base_url value plus w185, shows posters with a width of 185 pixels.
             // Store it in localStorage so we don't make the configuration call every time.
             localStorage.setItem('tmdbImageUrlBase', JSON.parse(data).images.base_url + 'w185');
-            document.getElementById("title").innerHTML = "tmdbImageUrlBase downloaded from themoviedb.org: " + localStorage.getItem('tmdbImageUrlBase'))";
+            document.getElementById("title").innerHTML = "tmdbImageUrlBase downloaded from themoviedb.org: " + localStorage.getItem('tmdbImageUrlBase');
         }
         // callback for getConfiguration call error
         function configErrorCallback(data) {
             'use strict';
-            document.getElementById("title").text('Error getting TMDb configuration! ' + JSON.parse(data).status_message);
+            document.getElementById("title").innerHTML = "Error getting TMDb configuration! " + JSON.parse(data).status_message;
         }
         // check localStorage for imageBaseUrl, download from TMDb if not found
         if (localStorage.getItem('tmdbImageUrlBase')) {
@@ -75,7 +75,7 @@
         function errorCallback(data) {
             'use strict';
             //console.log('error: \n' + data);
-            document.getElementById("title").text('Error searching. ' + JSON.parse(data).status_message);
+            document.getElementByID("movietab5").innerHTML ="Error searching. " + JSON.parse(data).status_message);
         }
 
         // search button click event handler
