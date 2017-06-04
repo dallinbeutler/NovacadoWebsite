@@ -23,6 +23,8 @@
 				$_SESSION['accname'] = $accname;
 				$_SESSION['phash'] = $row;
 			}
+			else 
+				echo "invalid username and password combo";
 		} 	
 	catch (PDOException $ex) {
 		echo "Error connecting to the db. Details: $ex";
