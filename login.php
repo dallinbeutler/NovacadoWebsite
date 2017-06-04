@@ -30,7 +30,7 @@
 						if(this.responseText != "success!")
 							window.location = "index.php";
 						else
-							document.getElementById("badcred").style.visibility = "visible";
+							document.getElementById("badcred").style= "visibility: visible";
 					}
 				};
 			}
