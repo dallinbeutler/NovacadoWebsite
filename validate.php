@@ -18,7 +18,7 @@
 	$statement = $db->prepare($query);
 	$statement->bindValue(1, $q);
 	$statement->execute();
-	$row = $statement->fetchColumn());
+	
 	echo "work jesus";
 
 ?>
