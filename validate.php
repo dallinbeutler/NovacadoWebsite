@@ -23,5 +23,5 @@
 	foreach ($results as $row) {
 	$c = 1;
 	}
-	echo $c
+	echo $c;
 ?>
