@@ -32,7 +32,17 @@
 				xmlhttp.send();
 			}
 		};
-
+		function checkpasswordlength(){
+			if (document.getElementById("pwd1").value.length > 8){
+				document.getElementById("submitbutton").disabled = false;
+				document.getElementById("pwd2").style = "color: black";
+				}
+			else{
+				document.getElementById("submitbutton").disabled = true;
+				document.getElementById("pwd1").style = "color: red";
+				}
+		}
+		
 		function checkpasswords(){
 			if (document.getElementById("pwd1").value === document.getElementById("pwd2").value){
 				document.getElementById("submitbutton").disabled = false;
@@ -59,12 +69,12 @@
 				<div class="container">
 					<label ><b>Username</b></label>
 					<input id="usrnameinput" type="text" placeholder="Username" name="username" onchange="checkName()" required>
-					<label id="usernamecheck"> .</label>
+					<label id="usernamecheck"></label>
 					<label><b>Email</b></label>
 					<input type="email" placeholder="Enter Email" name="email" required>
 					
 					<label><b>Password</b></label>
-					<input id ="pwd1" type="password" placeholder="Enter Password" name="psw" required>
+					<input id ="pwd1" type="password" placeholder="Enter Password" name="psw" onchange="checkpasswordlength()"required>
 
 					<label ><b>Repeat Password</b></label>
 					<input id="pwd2" type="password" placeholder="Repeat Password" name="psw-repeat" onchange="checkpasswords()" required>
