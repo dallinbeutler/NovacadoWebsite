@@ -4,7 +4,7 @@
 	<link rel="icon" href="novacado_pit.png">
     <title> Edits </title>
 	<script src="themoviedb.js"></script>
-	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script>
 	
 		function showreviews(str) {
