@@ -57,9 +57,13 @@
 					}
 
 				}
+				else{
+					alert("something went wrong!");
+				}
+
 			};
 
-
+			alert("made it this far!");
 			xmlhttp.open("GET","https://api.themoviedb.org/3/movie/" + str + "?api_key=2b8c6c988082f2afded86703adeccbc8&language=en-US",true);
 			xmlhttp.send();
 		}
