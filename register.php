@@ -36,9 +36,11 @@
 		function checkpasswords(){
 			if (document.getElementById("pwd1").value === document.getElementById("pwd2").value){
 				document.getElementById("submitbutton").disabled = false;
+				document.getElementById("pwd2").style = "color: black";
 				}
 			else{
 				document.getElementById("submitbutton").disabled = true;
+				document.getElementById("pwd2").style = "color: red";
 				}
 		}
 		$('#regform').submit(function() {
@@ -64,7 +66,7 @@
 					<label><b>Password</b></label>
 					<input id ="pwd1" type="password" placeholder="Enter Password" name="psw" required>
 
-					<label><b>Repeat Password</b></label>
+					<label ><b>Repeat Password</b></label>
 					<input id="pwd2" type="password" placeholder="Repeat Password" name="psw-repeat" onchange="checkpasswords()" required>
 					<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
