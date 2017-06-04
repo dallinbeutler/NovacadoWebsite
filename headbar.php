@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<link rel="stylesheet" type="text/css" href="headbar.css">
 	</head>
 	<body>
 		<div id="header">
