@@ -3,7 +3,7 @@
 		<script>
 			// Get the modal
 			var modal = document.getElementById('id01');
-			document.getElementById("badcred").style.visibility = "hidden";
+			document.getElementById("badcred").style= "visibility: hidden";
 
 			// When the user clicks anywhere outside of the modal, close it
 			window.onclick = function(event) {
