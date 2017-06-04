@@ -65,7 +65,7 @@
             if (data.results && data.results.length > 0) {
                 var imageUrl = localStorage.getItem('tmdbImageUrlBase') + data.results[0].poster_path;
                 document.getElementByID(asker).append('Title: <b>' + data.results[0].title + '</b><br />');
-                document.getElementById(asker)..append('<img src="' + imageUrl + '" />');
+                document.getElementById(asker).append('<img src="' + imageUrl + '" />');
             } else {
                 document.getElementByID(asker).text('Nothing found');
                 console.log('Nothing found');
@@ -80,7 +80,7 @@
 
         // search button click event handler
         function searchMovie(inID, inAsker) {
-			asker = asker;
+			asker = inAsker;
             theMovieDb.search.getById(inID, successCallback, errorCallback);
         }
 
