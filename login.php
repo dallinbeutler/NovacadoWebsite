@@ -10,6 +10,8 @@
 					modal.style.display = "none";
 				}
 			}
+			document.getElementById("badcred").style.visibility = "hidden";
+
 
 			function login(){
 				var str = document.getElementById("username").value;
@@ -24,7 +26,10 @@
 				xmlhttp.send();
 				xmlhttp.onreadystatechange = function() {
 					if (this.readyState == 4 && this.status == 200) {
-						document.getElementById("txtHint").innerHTML = this.responseText;
+						if(this.responseText != "success!")
+						document.getElementById("badcred").style.visibility = "hidden";
+						else
+						document.getElementById("badcred").style.visibility = "visible";
 					}
 				};
 			}
@@ -81,6 +86,7 @@
 			  <div class="clearfix">
 				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
 				<button type="submit" class="signupbtn" onclick="login()">Login</button>
+				<label id="badcred" ><b>bad credentials!</b></label>
 			  </div>
 			</div>
 		  </form>
