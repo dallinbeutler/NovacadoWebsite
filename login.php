@@ -46,25 +46,22 @@
 				try {
 					$db = new PDO("pgsql:host=$servername;port=5432;dbname=$dbname", $username, $password);
 					$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+					$query = "select COUNT(*) FROM account WHERE accname = ? AND passhash = ? LIMIT 1";
+					$statement = $db->prepare($query);
+					$statement->bindValue(1, $accname);
+					$statement->bindValue(2, $phash);
+					$statement->execute();
+					if($statement->fetchColumn())
+						echo $accname;
+					else
+						echo "baddd stuff!";
 					} 	
 				catch (PDOException $ex) {
 					echo "Error connecting to the db. Details: $ex";
 					die();
 				}
-				$query = "select COUNT(*) FROM account WHERE accname = ? AND passhash = ? LIMIT 1";
-				$statement = $db->prepare($query);
-				$statement->bindValue(1, $accname);
-				$statement->bindValue(2, $phash);
-				try{
-				$statement->execute();
-					if($stmt->fetchColumn())
-						echo $accname;
-					else
-						echo "baddd stuff!";
-				}
-				catch(PDOException $ex){
-					echo "bad statement";
-				}
+
 			}
 			else
 				echo'<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>';
