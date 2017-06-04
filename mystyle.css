@@ -15,6 +15,18 @@ body{
 
 }
 
+#left{
+	position:relative;
+	float: left;
+	margin: 0 0 0 0;
+}
+#right{
+	position:relative;
+	float: right;
+	text-align: right;
+	margin: 0 0 0 0;
+}
+
 tr{
 	margin: auto;
 	position: relative;
@@ -377,16 +389,5 @@ button {
     }
 }
 
-#left{
-	position:relative;
-	float: left;
-	margin: 0 0 0 0;
-	width: 50%;
-}
-#right{
-	position:relative;
-	float: right;
-	text-align: right;
-	margin: 0 0 0 0;
-}
+
 
