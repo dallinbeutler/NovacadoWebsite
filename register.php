@@ -33,9 +33,9 @@
 			}
 		};
 		function checkpasswordlength(){
-			if (document.getElementById("pwd1").value.length > 8){
+			if (document.getElementById("pwd1").value.length >= 8){
 				document.getElementById("submitbutton").disabled = false;
-				document.getElementById("pwd2").style = "color: black";
+				document.getElementById("pwd1").style = "color: black";
 				}
 			else{
 				document.getElementById("submitbutton").disabled = true;
