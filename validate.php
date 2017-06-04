@@ -18,7 +18,7 @@
 	$statement = $db->prepare($query);
 	$statement->bindValue(1, $q);
 	$statement->execute();
-	$row = count($results->fetchAll());
+	$row = count($statement->fetchAll());
 	if ($row > 0)
 		echo 'userame is already taken!'
 	else
