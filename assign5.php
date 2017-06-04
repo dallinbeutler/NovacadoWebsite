@@ -64,10 +64,10 @@
             // we just take the first result and display it
             if (data.results && data.results.length > 0) {
                 var imageUrl = localStorage.getItem('tmdbImageUrlBase') + data.results[0].poster_path;
-                Document.getElementByID(asker).append('Title: <b>' + data.results[0].title + '</b><br />');
+                document.getElementByID(asker).append('Title: <b>' + data.results[0].title + '</b><br />');
                 document.getElementById(asker)..append('<img src="' + imageUrl + '" />');
             } else {
-                Document.getElementByID(asker).text('Nothing found');
+                document.getElementByID(asker).text('Nothing found');
                 console.log('Nothing found');
             }
         }
