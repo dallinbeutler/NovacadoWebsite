@@ -17,17 +17,17 @@
 		$statement = $db->prepare($query);
 		$statement->bindValue(1, $accname);
 		$statement->execute();
+		foreach ($results as $row)
+			if (password_verify($password, $row){
+
+				$_SESSION['accname'] = $accname;
+				$_SESSION['phash'] = $row;
+			}
 		} 	
 	catch (PDOException $ex) {
 		echo "Error connecting to the db. Details: $ex";
-		die();
 	}
 
-	foreach ($results as $row)
-		if (password_verify($password, $row){
 
-			$_SESSION['accname'] = $accname;
-			$_SESSION['phash'] = $row;
-		}
 
 ?>

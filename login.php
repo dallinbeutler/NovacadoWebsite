@@ -59,7 +59,7 @@
 					} 	
 				catch (PDOException $ex) {
 					echo "Error connecting to the db. Details: $ex";
-					die();
+					
 				}
 
 			}
