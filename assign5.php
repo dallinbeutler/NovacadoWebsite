@@ -80,7 +80,7 @@
 
         // search button click event handler
         function searchMovie(inID, inAsker) {
-			asker = asker
+			asker = asker;
             theMovieDb.search.getById(inID, successCallback, errorCallback);
         }
 
@@ -128,7 +128,7 @@
 				foreach ($results as $row) {
 					echo '<tr>'
 					. '<td><a href="error.php"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Download_alt_font_awesome.svg/768px-Download_alt_font_awesome.svg.png" alt="Download" style="width:32px;height:32px;"> </a>'
-					. '</td><td onload="searchMovie('.$row[moviedbnumber] . ',this)>'. $row[moviedbnumber] 
+					. '</td><td id="movietab'.$row[id]. '" onload="searchMovie('.$row[moviedbnumber] . ',movietab'.$row[id].')>'. $row[moviedbnumber] 
 					. '</td><td>'. $row[creationdate] 
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 
