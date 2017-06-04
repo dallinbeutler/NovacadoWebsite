@@ -1,5 +1,5 @@
 <?php
-	$str = intval($_POST['q']);
+	$str = intval($_GET['q']);
 	echo "entered!";
 	$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
 	$username = "fmtextbjvwjlcy";

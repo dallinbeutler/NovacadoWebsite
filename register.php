@@ -28,7 +28,7 @@
 						document.getElementById("usernamecheck").innerHTML = this.responseText;
 					}
 				};
-				xmlhttp.open("POST", "validate.php?q=" + str, true);
+				xmlhttp.open("GET", "validate.php?q=" + str, true);
 				xmlhttp.send();
 			}
 		};
