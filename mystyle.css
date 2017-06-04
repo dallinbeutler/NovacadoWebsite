@@ -266,7 +266,7 @@ input[type=text], input[type=password], input[type=email]{
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
+/* Set a style for all buttons 
 button {
     background-color: #4CAF50;
     color: white;
@@ -275,7 +275,7 @@ button {
     border: none;
     cursor: pointer;
 
-}
+}*/
 
 /* Extra styles for the cancel button */
 .cancelbtn {
