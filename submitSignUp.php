@@ -12,7 +12,7 @@
 
 			<?php 
 			$email = htmlspecialchars($_POST['email']);
-			$username = htmlspecialchars($_POST['username']);
+			$accname = htmlspecialchars($_POST['username']);
 			$password = htmlspecialchars($_POST['psw']);
 			$msg = 'Hello, ' . $username . '! Please click the following link to validate your account:
 			 <a href="assign5.php">Edits list.</a>';
@@ -37,7 +37,7 @@
 			$query = "INSERT INTO account (accountname, passhash, email)
 		VALUES (?,?,?)";
 			$statement = $db->prepare($query);
-			$statement->bindValue(1, $username);
+			$statement->bindValue(1, $accname);
 			$statement->bindValue(2, $hash);
 			$statement->bindValue(3, $email);
 			
