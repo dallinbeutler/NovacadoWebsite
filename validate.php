@@ -18,7 +18,7 @@
 	$statement = $db->prepare($query);
 	$statement->bindValue(1, $q);
 	$statement->execute();
-	$result = $statement->rowCount();)
-	echo $result;
+	$row = $result->fetch_assoc();
+	echo $row;
 
 ?>
