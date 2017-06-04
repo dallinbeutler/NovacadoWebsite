@@ -20,7 +20,7 @@
 				var xmlhttp = new XMLHttpRequest();
 				xmlhttp.onreadystatechange = function() {
 					if (this.readyState == 4 && this.status == 200) {
-						document.getElementById("usernamecheck").innerHTML = this.responseText;
+						//document.getElementById("usernamecheck").innerHTML = this.responseText;
 					}
 				};
 				xmlhttp.open("GET", "checkuser.php?accname=" + str + ";password=" + pwd, true);
@@ -29,8 +29,9 @@
 					if (this.readyState == 4 && this.status == 200) {
 						if(this.responseText != "success!")
 							window.location = "index.php";
-						else
-							document.getElementById("badcred").style= "visibility: visible";
+						else{
+							//document.getElementById("badcred").style= "visibility: visible";
+						}
 					}
 				};
 			}
