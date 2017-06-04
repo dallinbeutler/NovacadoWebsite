@@ -11,16 +11,6 @@ body, html{
 	margin: 0px;	
 	
 }
-body{
-
-}
-
-#left{
-	float: left;
-}
-#right{
-	float: right;
-}
 
 tr{
 	margin: auto;
@@ -50,19 +40,6 @@ a{
 }
 .white{
 	color: white;
-}
-.iconsize{
-	height:25px;
-}
-
-
-#header{
-	font-family: "Arial Black", Gadget, sans-serif;
-	background-color: #80C04A;
-	padding:5px;
-	margin: auto;
-	width: 100%;
-	height: 50px;
 }
 
 table{
