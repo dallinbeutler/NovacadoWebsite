@@ -64,7 +64,7 @@
 
 			}
 			else
-				echo'<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>';
+				echo'<button onclick="document.getElementById(\'id02\').style.display=\'block\'" style="width:auto;">Login</button>';
 		?>
 
 		<div id="id02" class="modal">
