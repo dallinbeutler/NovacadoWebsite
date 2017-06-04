@@ -33,7 +33,7 @@
 		}
 	}
 	</script>
-		<script type="text/javascript">
+	<script type="text/javascript">
 		var asker = "none";
         // callback for successful getConfiguration call
         function configSuccessCallback(data) {
@@ -64,7 +64,7 @@
             // we just take the first result and display it
             if (data.results && data.results.length > 0) {
                 var imageUrl = localStorage.getItem('tmdbImageUrlBase') + data.results[0].poster_path;
-                document.getElementByID(asker).append('Title: <b>' + data.results[0].title + '</b><br />');
+                document.getElementByID("movietab5").append('Title: <b>' + data.results[0].title + '</b><br />');
                 document.getElementById(asker).append('<img src="' + imageUrl + '" />');
             } else {
                 document.getElementByID(asker).text('Nothing found');
