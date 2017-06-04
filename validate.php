@@ -1,6 +1,6 @@
 <?php
-$str = intval($_POST['q']);
-
+	$str = intval($_POST['q']);
+	echo "entered!";
 	$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
 	$username = "fmtextbjvwjlcy";
 	$password = "6ac6980946253a82ad6759afe6c2828659ca889e406e9afeeacd53d34283a17c";
