@@ -9,9 +9,9 @@
 	   <td "id=topbar"><a href="about.php">About</a></td>
 	   <td></td>
 	   <td></td>
-	   <td><?php include "register.php" ?></td>
-	   <td "id=topbar"><a href="register.php">Register</a></td>
-	   <td "id=topbar"><a href="login.php">Login</a></td>
 	</tr>
  </table>
+	 <div id="right">
+		<td><?php include "register.php" ?></td>
+	 </div>
 </div>
