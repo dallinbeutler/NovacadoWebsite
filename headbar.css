@@ -9,36 +9,27 @@ body, html{
 	font-family: 'Lato', sans-serif;
 	padding: 0px;
 	margin: 0px;	
-	
 }
 
 #left{
 	float: left;
-  padding: 0px;
-  margin: 0px;
-  height: 20px;
+  margin: 0px 5px 0px 0px;
 }
 #right{
-    padding: 0px;
-  margin: 0px;
 	float: right;
+  }
+
+#iconsize{
+	height:100%;
+  width: height;
 }
 
-.iconsize{
-	height:100%;
-}
-#pictureHolder{
-	width:100%;
-}
-#pictureHolderv{
-	height:100%;
-}
 
 #header{
 	font-family: "Arial Black", Gadget, sans-serif;
 	background-color: #80C04A;
-	padding:0 0 0 0;
-	margin: 0;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
 	width: 100%;
 	height: 50px;
 }
@@ -47,10 +38,10 @@ body, html{
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 14px 15px;
-    margin: 5px 5 5 5;
+    padding: 5px 15px;
+    margin: 0px 0px 0px 0px;
     border: none;
-    cursor: pointer;
-	height: 50px;
-   
+    height: 50px;
+
 }
+
