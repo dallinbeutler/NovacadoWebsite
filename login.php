@@ -10,6 +10,25 @@
 					modal.style.display = "none";
 				}
 			}
+
+			function login(){
+				var str = document.getElementById("username").value;
+				var pwd = document.getElementById("loginpass").value;
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						document.getElementById("usernamecheck").innerHTML = this.responseText;
+					}
+				};
+				xmlhttp.open("GET", "checkuser.php?accname=" + str + ";password=" + pwd, true);
+				xmlhttp.send();
+				xmlhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						document.getElementById("txtHint").innerHTML = this.responseText;
+					}
+				};
+			}
+		};
 		</script>
 
 	</head>
@@ -36,12 +55,16 @@
 				$statement = $db->prepare($query);
 				$statement->bindValue(1, $accname);
 				$statement->bindValue(2, $phash);
-				
+				try{
 				$statement->execute();
 					if($stmt->fetchColumn())
 						echo $accname;
 					else
 						echo "baddd stuff!";
+				}
+				catch(PDOException $ex){
+					echo "bad statement";
+				}
 			}
 			else
 				echo'<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>';
@@ -49,18 +72,18 @@
 
 		<div id="id02" class="modal">
 		  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">x</span>
-		  <form class="modal-content animate" action="/action_page.php">
+		  <form class="modal-content animate" >
 			<div class="container">
-			  <label><b>Email</b></label>
-			  <input type="text" placeholder="Enter Email" name="email" required>
+			  <label><b>Username</b></label>
+			  <input id="username" type="text" placeholder="Enter user name" name="username" required>
 
 			  <label><b>Password</b></label>
-			  <input type="password" placeholder="Enter Password" name="psw" required>
+			  <input id="loginpass" type="password" placeholder="Enter Password" name="psw" required>
 
 			  <input type="checkbox" checked="checked"> Remember me
 			  <div class="clearfix">
 				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-				<button type="submit" class="signupbtn">Login</button>
+				<button type="submit" class="signupbtn" onclick="login()">Login</button>
 			  </div>
 			</div>
 		  </form>
