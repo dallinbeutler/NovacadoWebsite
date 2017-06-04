@@ -1,39 +1,40 @@
 <HTML>
 	<head>
 		<script>
-			var frmvalidator  = new Validator("register");
-			frmvalidator.EnableOnPageErrorDisplay();
-			frmvalidator.EnableMsgsTogether();
-			frmvalidator.addValidation("name","req","Please provide your name");
+			// Get the modal
+			var modal = document.getElementById('id01');
 
-			frmvalidator.addValidation("email","req","Please provide your email address");
-
-			frmvalidator.addValidation("email","email","Please provide a valid email address");
-
-			frmvalidator.addValidation("username","req","Please provide a username");
-
-			frmvalidator.addValidation("password","req","Please provide a password");
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
 		</script>
+
 	</head>
 	<body>
-		<form id='register' action='register.php' method='post' 
-			accept-charset='UTF-8'>
-			<fieldset>
-				<legend>Register</legend>
-				<input type='hidden' name='submitted' id='submitted' value='1'/>
-				<label for='name' >Your Full Name*: </label>
-				<input type='text' name='name' id='name' maxlength="50" />
-				<label for='email' >Email Address*:</label>
-				<input type='text' name='email' id='email' maxlength="50" />
-			
-				<label for='username' >UserName*:</label>
-				<input type='text' name='username' id='username' maxlength="50" />
-			
-				<label for='password' >Password*:</label>
-				<input type='password' name='password' id='password' maxlength="50" />
-				<input type='submit' name='Submit' value='Submit' />
+		<div id="id01" class="modal">
+		  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		  <form class="modal-content animate" action="/action_page.php">
+			<div class="container">
+			  <label><b>Email</b></label>
+			  <input type="text" placeholder="Enter Email" name="email" required>
 
-			</fieldset>
-		</form>
+			  <label><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+
+			  <label><b>Repeat Password</b></label>
+			  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+			  <input type="checkbox" checked="checked"> Remember me
+			  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+			  <div class="clearfix">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<button type="submit" class="signupbtn">Sign Up</button>
+			  </div>
+			</div>
+		  </form>
+		</div>
 	</body>
 </HTML>

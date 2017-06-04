@@ -1,12 +1,17 @@
-      <div id="header">
-         <table>
-			<tr>
-               <td "id=topbar"><a  href="index.php"><img src="novacado_pit.png" alt="avacados" class="iconsize"></a></td>
-			   <td "id=topbar"><a href="assignList.php">Assignments</a></td>
-			   <td "id=topbar"><a href="Download.php">Download</a></td>
-               <td "id=topbar"><a href="assign5.php">Edits</a></td>
-			   <td "id=topbar"><a href="FAQs.php">FAQs</a></td>
-			   <td "id=topbar"><a href="about.php">About</a></td>
-			</tr>
-         </table>
-      </div>
+<div id="header">
+ <table>
+	<tr>
+	   <td "id=topbar"><a  href="index.php"><img src="novacado_pit.png" alt="avacados" class="iconsize"></a></td>
+	   <td "id=topbar"><a href="assignList.php">Assignments</a></td>
+	   <td "id=topbar"><a href="Download.php">Download</a></td>
+	   <td "id=topbar"><a href="assign5.php">Edits</a></td>
+	   <td "id=topbar"><a href="FAQs.php">FAQs</a></td>
+	   <td "id=topbar"><a href="about.php">About</a></td>
+	   <td></td>
+	   <td></td>
+	   <td><?php include "register.php" ?></td>
+	   <td "id=topbar"><a href="register.php">Register</a></td>
+	   <td "id=topbar"><a href="login.php">Login</a></td>
+	</tr>
+ </table>
+</div>
