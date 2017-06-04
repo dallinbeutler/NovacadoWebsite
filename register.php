@@ -42,7 +42,7 @@
 			<form class="modal-content animate" action="/action_page.php">
 				<div class="container">
 					<label ><b>Username</b></label>
-					<input id="usrnameinput" type="text" placeholder="Username" name="username" onchange="checkname()" required>
+					<input id="usrnameinput" type="text" placeholder="Username" name="username" onchange="checkName()" required>
 					<label id="usernamecheck"> .</label>
 					<label><b>Email</b></label>
 					<input type="email" placeholder="Enter Email" name="email" required>
