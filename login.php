@@ -69,7 +69,7 @@
 
 		<div id="id02" class="modal">
 		  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">x</span>
-		  <form class="modal-content animate" >
+		  <form class="modal-content animate" action="location.reload()" >
 			<div class="container">
 			  <label><b>Username</b></label>
 			  <input id="username" type="text" placeholder="Enter user name" name="username" required>
