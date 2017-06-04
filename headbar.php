@@ -5,7 +5,7 @@
 	<body>
 		<div id="header">
 			<div id="left">
-				<div id = "pictureholder"><button onclick = "window.location = 'index.php'"><img src="novacado_pit.png" alt="avacados" class="iconsize2"></div></button>
+				<div id = "pictureholder"><button onclick = "window.location = 'index.php'"><img src="novacado_pit.png" alt="avacados" id="iconsize2"></div></button>
 			</div >
 				<button onclick = "window.location = 'assignList.php'"> Assignments</button>
 				<button onclick = "window.location = 'assign5.php'"> Edits</button>
