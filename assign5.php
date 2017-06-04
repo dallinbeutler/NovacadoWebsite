@@ -33,7 +33,58 @@
 		}
 	}
 	</script>
+		<script type="text/javascript">
+		var asker = "none";
+        // callback for successful getConfiguration call
+        function configSuccessCallback(data) {
+            'use strict';
+            // Set the base image url to the returned base_url value plus w185, shows posters with a width of 185 pixels.
+            // Store it in localStorage so we don't make the configuration call every time.
+            localStorage.setItem('tmdbImageUrlBase', JSON.parse(data).images.base_url + 'w185');
+            $('#title').text('tmdbImageUrlBase downloaded from themoviedb.org: ' + localStorage.getItem('tmdbImageUrlBase'));
+        }
+        // callback for getConfiguration call error
+        function configErrorCallback(data) {
+            'use strict';
+            $('#title').text('Error getting TMDb configuration! ' + JSON.parse(data).status_message);
+        }
+        // check localStorage for imageBaseUrl, download from TMDb if not found
+        if (localStorage.getItem('tmdbImageUrlBase')) {
+            $('#title').text('tmdbImageUrlBase retrieved from localstorage: ' + localStorage.getItem('tmdbImageUrlBase'));
+        } else {
+            theMovieDb.configurations.getConfiguration(configSuccessCallback, configErrorCallback);
+        }
 
+        // callback for successful movie search
+        function successCallback(data) {
+            'use strict';
+            $('#title').text('');
+            data = JSON.parse(data);
+            //console.log(data);
+            // we just take the first result and display it
+            if (data.results && data.results.length > 0) {
+                var imageUrl = localStorage.getItem('tmdbImageUrlBase') + data.results[0].poster_path;
+                Document.getElementByID(asker).append('Title: <b>' + data.results[0].title + '</b><br />');
+                $(asker).append('<img src="' + imageUrl + '" />');
+            } else {
+                Document.getElementByID(asker).text('Nothing found');
+                console.log('Nothing found');
+            }
+        }
+        // callback for movie search error
+        function errorCallback(data) {
+            'use strict';
+            //console.log('error: \n' + data);
+            $('#results').text('Error searching. ' + JSON.parse(data).status_message);
+        }
+
+        // search button click event handler
+        function searchMovie(inID, inAsker) {
+			asker = asker;
+            theMovieDb.search.getById(inID, successCallback, errorCallback);
+        }
+
+    </script>
    </head>
    <body>
       <?php include 'headbar.php'; ?>
@@ -95,58 +146,7 @@
 			?>
 		 </div>
 	  </div>
-	<script type="text/javascript">
-		var asker = "none";
-        // callback for successful getConfiguration call
-        function configSuccessCallback(data) {
-            'use strict';
-            // Set the base image url to the returned base_url value plus w185, shows posters with a width of 185 pixels.
-            // Store it in localStorage so we don't make the configuration call every time.
-            localStorage.setItem('tmdbImageUrlBase', JSON.parse(data).images.base_url + 'w185');
-            $('#title').text('tmdbImageUrlBase downloaded from themoviedb.org: ' + localStorage.getItem('tmdbImageUrlBase'));
-        }
-        // callback for getConfiguration call error
-        function configErrorCallback(data) {
-            'use strict';
-            $('#title').text('Error getting TMDb configuration! ' + JSON.parse(data).status_message);
-        }
-        // check localStorage for imageBaseUrl, download from TMDb if not found
-        if (localStorage.getItem('tmdbImageUrlBase')) {
-            $('#title').text('tmdbImageUrlBase retrieved from localstorage: ' + localStorage.getItem('tmdbImageUrlBase'));
-        } else {
-            theMovieDb.configurations.getConfiguration(configSuccessCallback, configErrorCallback);
-        }
 
-        // callback for successful movie search
-        function successCallback(data) {
-            'use strict';
-            $('#title').text('');
-            data = JSON.parse(data);
-            //console.log(data);
-            // we just take the first result and display it
-            if (data.results && data.results.length > 0) {
-                var imageUrl = localStorage.getItem('tmdbImageUrlBase') + data.results[0].poster_path;
-                Document.getElementByID(asker).append('Title: <b>' + data.results[0].title + '</b><br />');
-                $(asker).append('<img src="' + imageUrl + '" />');
-            } else {
-                Document.getElementByID(asker).text('Nothing found');
-                console.log('Nothing found');
-            }
-        }
-        // callback for movie search error
-        function errorCallback(data) {
-            'use strict';
-            //console.log('error: \n' + data);
-            $('#results').text('Error searching. ' + JSON.parse(data).status_message);
-        }
-
-        // search button click event handler
-        function searchMovie(inID, inAsker) {
-			asker = asker;
-            theMovieDb.search.getById(inID, successCallback, errorCallback);
-        }
-
-    </script>
    </body>
 
 </HTML>
