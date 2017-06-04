@@ -21,7 +21,7 @@
 	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 	$c = 0;
 	foreach ($results as $row) {
-	$c += 1;
+	$c = 1;
 	}
 	echo $c
 ?>
