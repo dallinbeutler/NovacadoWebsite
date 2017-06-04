@@ -1,6 +1,6 @@
 <?php 
-$email = htmlspecialchars($_GET['email']);
-$username = htmlspecialchars($_GET['username']);
+$email = htmlspecialchars($_POST['email']);
+$username = htmlspecialchars($_POST['username']);
 $msg = 'Hello, ' . $username . '! Please click the following link to validate your account:
  <a href="assign5.php">Edits list.</a>';
 

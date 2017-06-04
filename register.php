@@ -45,7 +45,7 @@
 
 		<div id="id01" class="modal">
 			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span>
-			<form class="modal-content animate" id="regform" action="/action_page.php">
+			<form class="modal-content animate" id="regform" action="submitSignUp.php" method="post">
 				<div class="container">
 					<label ><b>Username</b></label>
 					<input id="usrnameinput" type="text" placeholder="Username" name="username" onchange="checkName()" required>
