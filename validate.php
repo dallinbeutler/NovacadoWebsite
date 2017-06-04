@@ -18,7 +18,10 @@
 	$statement = $db->prepare($query);
 	$statement->bindValue(1, $q);
 	$statement->execute();
-	$row = $statement->fetch_assoc();
-	echo $row;
-
+	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+	$c = 0;
+	foreach ($results as $row) {
+	$c += 1;
+	}
+	echo $c
 ?>
