@@ -14,11 +14,11 @@
 		echo "Error connecting to the db. Details: $ex";
 		die();
 		}
-	$query = 'SELECT * FROM account WHERE accountname = ?';
+	$query = 'SELECT count(*) FROM account WHERE accountname = ?';
 	$statement = $db->prepare($query);
 	$statement->bindValue(1, $q);
 	$statement->execute();
 	$row = $statement->fetchColumn());
-	echo $row;
+	echo "work jesus";
 
 ?>
