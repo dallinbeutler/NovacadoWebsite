@@ -48,5 +48,6 @@ button {
     margin: 5px 5 5 5;
     border: none;
     cursor: pointer;
+	height: 50px;
    
 }
