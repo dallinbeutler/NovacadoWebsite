@@ -33,7 +33,12 @@ td{
 	width: 100%;
 	margin: 0px;
 }
-
+#iconsize{
+  height:100%;
+}
+.iconsize{
+  height:100%;
+}
 
 ol{
 
