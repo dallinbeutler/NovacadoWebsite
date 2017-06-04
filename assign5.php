@@ -41,16 +41,16 @@
             // Set the base image url to the returned base_url value plus w185, shows posters with a width of 185 pixels.
             // Store it in localStorage so we don't make the configuration call every time.
             localStorage.setItem('tmdbImageUrlBase', JSON.parse(data).images.base_url + 'w185');
-            $('#results').text('tmdbImageUrlBase downloaded from themoviedb.org: ' + localStorage.getItem('tmdbImageUrlBase'));
+            $('#title').text('tmdbImageUrlBase downloaded from themoviedb.org: ' + localStorage.getItem('tmdbImageUrlBase'));
         }
         // callback for getConfiguration call error
         function configErrorCallback(data) {
             'use strict';
-            $('#results').text('Error getting TMDb configuration! ' + JSON.parse(data).status_message);
+            $('#title').text('Error getting TMDb configuration! ' + JSON.parse(data).status_message);
         }
         // check localStorage for imageBaseUrl, download from TMDb if not found
         if (localStorage.getItem('tmdbImageUrlBase')) {
-            $('#results').text('tmdbImageUrlBase retrieved from localstorage: ' + localStorage.getItem('tmdbImageUrlBase'));
+            $('#title').text('tmdbImageUrlBase retrieved from localstorage: ' + localStorage.getItem('tmdbImageUrlBase'));
         } else {
             theMovieDb.configurations.getConfiguration(configSuccessCallback, configErrorCallback);
         }
@@ -58,16 +58,16 @@
         // callback for successful movie search
         function successCallback(data) {
             'use strict';
-            $('#results').text('');
+            $('#title').text('');
             data = JSON.parse(data);
             //console.log(data);
             // we just take the first result and display it
             if (data.results && data.results.length > 0) {
                 var imageUrl = localStorage.getItem('tmdbImageUrlBase') + data.results[0].poster_path;
-                $(asker).append('Title: <b>' + data.results[0].title + '</b><br />');
+                Document.getElementByID(asker).append('Title: <b>' + data.results[0].title + '</b><br />');
                 $(asker).append('<img src="' + imageUrl + '" />');
             } else {
-                $('#results').text('Nothing found');
+                Document.getElementByID(asker).text('Nothing found');
                 console.log('Nothing found');
             }
         }
@@ -90,7 +90,7 @@
       <?php include 'headbar.php'; ?>
 	  <div id="centerArea">
 	     <div id="mainArea">
-            <myp class="center"><h2>Uploads</h2></myp>		
+            <myp id="title" class="center"><h2>Uploads</h2></myp>		
 			<?php
 				$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
 				$username = "fmtextbjvwjlcy";
