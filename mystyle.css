@@ -376,7 +376,11 @@ button {
         width: 100%;
     }
 }
+#right{
+	float: right;
+	margin: 0 0 0 0;
+}
 .right{
 	float: right;
-
+	margin: 0 0 0 0;
 }

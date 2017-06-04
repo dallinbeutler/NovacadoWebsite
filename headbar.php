@@ -18,6 +18,7 @@
 			</table>
 			<div id="right">
 				<?php include "register.php" ?> 
+				<?php include "login.php" ?> 
 			</div>
 		</div>
 	</body>
