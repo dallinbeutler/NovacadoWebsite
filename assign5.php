@@ -75,7 +75,7 @@
         function errorCallback(data) {
             'use strict';
             //console.log('error: \n' + data);
-            document.getElementByID("movietab5").innerHTML ="Error searching. " + JSON.parse(data).status_message);
+            document.getElementByID("movietab5").innerHTML ="Error searching. " + JSON.parse(data).status_message;
         }
 
         // search button click event handler
