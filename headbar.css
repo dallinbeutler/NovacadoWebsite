@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/*
+background-color: #134414;
+	background-color: #003000;
+*/
+body, html{
+	height: 100%;
+	background: #222222;
+	font-family: 'Lato', sans-serif;
+	padding: 0px;
+	margin: 0px;	
+	
+}
+
+#left{
+	float: left;
+  padding: 0px;
+  margin: 0px;
+  height: 20px;
+}
+#right{
+    padding: 0px;
+  margin: 0px;
+	float: right;
+}
+
+#iconsize{
+	height:15px;
+}
+
+
+#header{
+	font-family: "Arial Black", Gadget, sans-serif;
+	background-color: #80C04A;
+	padding:0px;
+	margin: auto;
+	width: 100%;
+	height: 50px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0 0 5;
+    border: none;
+    cursor: pointer;
+   
+}
