@@ -27,9 +27,9 @@
 				xmlhttp.onreadystatechange = function() {
 					if (this.readyState == 4 && this.status == 200) {
 						if(this.responseText != "success!")
-						document.getElementById("badcred").style.visibility = "hidden";
+							window.location = "index.php";
 						else
-						document.getElementById("badcred").style.visibility = "visible";
+							document.getElementById("badcred").style.visibility = "visible";
 					}
 				};
 			}
@@ -74,7 +74,7 @@
 
 		<div id="id02" class="modal">
 		  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">x</span>
-		  <form class="modal-content animate" action="index.php" >
+		  <form class="modal-content animate" >
 			<div class="container">
 			  <label><b>Username</b></label>
 			  <input id="username" type="text" placeholder="Enter user name" name="username" required>
