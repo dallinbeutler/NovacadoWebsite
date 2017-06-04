@@ -82,8 +82,9 @@
         function searchMovie(inID, inAsker) {
 			asker = inAsker;
 			//var inputoptions = [
-            theMovieDb.movies.getById({"id":76203 }, successCallback, errorCallback);
 			alert("called!");
+            theMovieDb.movies.getById({"id":76203 }, successCallback, errorCallback);
+			
         }
 
     </script>
