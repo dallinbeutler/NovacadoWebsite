@@ -1,3 +1,7 @@
+<?php
+ 
+?>
+
 <HTML>
 	<head>
 		<script>
@@ -10,6 +14,23 @@
 					modal.style.display = "none";
 				}
 			}
+		
+		function checkName(){
+			var str = document.getElementById("usrnameinput").value;
+			if (str.length == 0) { 
+				document.getElementById("txtHint").innerHTML = "";
+				return;
+			} else {
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						document.getElementById("usernamecheck").innerHTML = this.responseText;
+					}
+				};
+				xmlhttp.open("POST", "validate.php?q=" + str, true);
+				xmlhttp.send();
+			}
+		};
 		</script>
 
 	</head>
@@ -21,7 +42,8 @@
 			<form class="modal-content animate" action="/action_page.php">
 				<div class="container">
 					<label><b>Username</b></label>
-					<input type="text" placeholder="Username" name="username" required>
+					<input id="usrnameinput" type="text" placeholder="Username" name="username" onchange="checkname()" required>
+						<label id="usernamecheck"></label>
 					<label><b>Email</b></label>
 					<input type="email" placeholder="Enter Email" name="email" required>
 					
