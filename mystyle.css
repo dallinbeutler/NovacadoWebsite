@@ -43,8 +43,11 @@ td{
 ol{
 
 }
-a{
+a.lighter{
 	color: #4CAF50;
+}
+a.darker{
+	color: #222222;
 }
 .white{
 	color: white;

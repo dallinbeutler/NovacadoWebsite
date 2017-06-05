@@ -27,7 +27,7 @@
 			<br/>
 			<br/>
 			<myp>
-			   Already have Novacado? Looking for edits? go to the <a href="assign5.php">Edits list.</a>
+			   Already have Novacado? Looking for edits? go to the <a class="lighter" href="assign5.php">Edits list.</a>
 			</myp>
 		 </div>
 	  </div>
