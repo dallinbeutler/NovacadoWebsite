@@ -12,7 +12,7 @@
 	     <div id="mainArea" class="centered">
             <br/>
             <div id ="pictureHolder">
-	           <img src="fancy.jpg" alt="avacados" class="centered" />
+	           <img src="fancy.jpg" alt="avacados" class="centered" height=500 />
 			</div>	
             <br/><br/>			
             <myp>
