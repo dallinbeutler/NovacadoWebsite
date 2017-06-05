@@ -59,7 +59,7 @@
 
 			echo "</tr>";
 		}
-		echo "</table><br>";
+		echo "</table>";
 		
 }
 echo '<a class="darker" href="makeReview.php?q='.$q.'"> add a review? </button>';
