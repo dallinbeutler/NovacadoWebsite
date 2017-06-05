@@ -10,8 +10,9 @@
 	    <div id="mainArea">
 			<myp id="title" class="center"><h2>Error!</h2></myp>
 			<div id= "pictureHolder"> 
-				<img src="https://anticap.files.wordpress.com/2012/11/pota-statue-of-liberty-2.jpeg" alt='baderror' class="centered" />
+				<img src="liberty.png" alt='baderror' class="centered" />
 			</div>
+			<myp id="title" class="centered">Something went terribly wrong. We apologize for the inconvenience! </myp>
 		</div>
 	</div>
 
