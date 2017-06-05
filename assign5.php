@@ -34,7 +34,7 @@
 	}
 	</script>
 	<script type="text/javascript">
-		function showmovieold(number, caller) {
+		function displaymovie(number, caller) {
 			alert("called!");
 			if (window.XMLHttpRequest) {
 				// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -139,7 +139,7 @@
 				foreach ($results as $row) {
 					echo '<tr>'
 					. '<td><a href="error.php"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Download_alt_font_awesome.svg/768px-Download_alt_font_awesome.svg.png" alt="Download" style="width:32px;height:32px;"> </a>'
-					. '</td><td id="movietab'.$row[id]. '" onload="showmovie('.$row[moviedbnumber] .','.$row[id].')">'. $row[moviedbnumber] 
+					. '</td><td id="movietab'.$row[id]. '" onload="displaymovie('.$row[moviedbnumber] .','.$row[id].')">'. $row[moviedbnumber] 
 					. '</td><td>'. $row[creationdate] 
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 
