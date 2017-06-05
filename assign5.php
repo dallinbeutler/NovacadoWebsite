@@ -35,6 +35,7 @@
 	</script>
 	<script type="text/javascript">
 		function showmovie(number, caller) {
+			alert("called!");
 			if (window.XMLHttpRequest) {
 				// code for IE7+, Firefox, Chrome, Opera, Safari
 				xmlhttp = new XMLHttpRequest();
