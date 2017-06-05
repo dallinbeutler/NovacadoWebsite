@@ -43,7 +43,7 @@
 				// code for IE6, IE5
 				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 			}
-			xmlhttp.onreadystatechange = function(num) {
+			xmlhttp.onreadystatechange = function() {
 				if (this.readyState == 4 && this.status == 200) {
 					document.getElementById("demo").innerHTML = this.responseText;
 					var obj = JSON.parse(this.responseText);
@@ -61,7 +61,7 @@
 				}
 
 			};
-			xmlhttp.open("GET","https://api.themoviedb.org/3/movie/" + num + "?api_key=2b8c6c988082f2afded86703adeccbc8&language=en-US",true);
+			xmlhttp.open("GET","https://api.themoviedb.org/3/movie/" + number + "?api_key=2b8c6c988082f2afded86703adeccbc8&language=en-US",true);
 			xmlhttp.send();
 		}
 	function showmovie(num) {
