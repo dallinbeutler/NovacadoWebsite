@@ -64,44 +64,13 @@
 			xmlhttp.open("GET","https://api.themoviedb.org/3/movie/" + number + "?api_key=2b8c6c988082f2afded86703adeccbc8&language=en-US",true);
 			xmlhttp.send();
 		}
-	function showmovie(num) {
-		if (window.XMLHttpRequest) {
-			// code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp = new XMLHttpRequest();
-		} else {
-			// code for IE6, IE5
-			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		xmlhttp.onreadystatechange = function(num) {
-			if (this.readyState == 4 && this.status == 200) {
-				document.getElementById("demo").innerHTML = this.responseText;
-				var obj = JSON.parse(this.responseText);
-
-					document.getElementById("demo").innerHTML = 'Title: <b>' + obj.title + '</b><br />';
-
-					var imageUrl = "http://image.tmdb.org/t/p/w185/" + obj.poster_path;
-					
-					document.getElementById("demo").innerHTML += '<img src="' + imageUrl + '" />';
-
-
-			}
-			else{
-				document.getElementById("demo").innerHTML = "bad query";
-			}
-
-		};
-		xmlhttp.open("GET","https://api.themoviedb.org/3/movie/" + num + "?api_key=2b8c6c988082f2afded86703adeccbc8&language=en-US",true);
-		xmlhttp.send();
-	}
     </script>
    </head>
    <body>
       <?php include 'headbar.php'; ?>
 	  <div id="centerArea">
 	     <div id="mainArea">
-            <myp id="title" class="center"><h2>Uploads</h2></myp>
-<p id="demo" onload="showmovie(155)">Click the button to change the text in this paragraph.</p>
-<button onclick="showmovie(155)">Try it</button>	
+            <myp id="title" class="center"><h2>Uploads</h2></myp>	
 			<?php
 				$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
 				$username = "fmtextbjvwjlcy";
