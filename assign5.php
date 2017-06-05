@@ -45,19 +45,19 @@
 			}
 			xmlhttp.onreadystatechange = function() {
 				if (this.readyState == 4 && this.status == 200) {
-					document.getElementById("demo").innerHTML = this.responseText;
+					document.getElementById("movietab" + caller).innerHTML = this.responseText;
 					var obj = JSON.parse(this.responseText);
 
-						document.getElementById("demo").innerHTML = '<b>' + obj.title + '</b><br />';
+						document.getElementById("movietab" + caller).innerHTML = '<b>' + obj.title + '</b><br />';
 
 						var imageUrl = "http://image.tmdb.org/t/p/w185/" + obj.poster_path;
 						
-						document.getElementById("demo").innerHTML += '<img src="' + imageUrl + '" />';
+						document.getElementById("movietab" + caller).innerHTML += '<img src="' + imageUrl + '" />';
 
 
 				}
 				else{
-					document.getElementById("demo").innerHTML = "bad query";
+					document.getElementById("movietab" + caller).innerHTML = "bad query";
 				}
 
 			};
