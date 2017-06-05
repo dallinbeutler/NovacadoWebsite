@@ -10,7 +10,10 @@
 	  ?>
 	  <div id="centerArea">
 	     <div id="mainArea">
-            <br/>			
+            <br/>	<div id ="pictureHolder">
+	           <img src="babycado.png" alt="avacados" class="centered" />
+			</div>
+			<br>
             <myp>
 			   Sorry, not available yet, Check back soon!
 			</myp>
