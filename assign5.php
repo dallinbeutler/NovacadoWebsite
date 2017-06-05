@@ -34,7 +34,7 @@
 	}
 	</script>
 	<script type="text/javascript">
-		function showmovie(num) {
+		function showmovie(num, caller) {
 			if (window.XMLHttpRequest) {
 				// code for IE7+, Firefox, Chrome, Opera, Safari
 				xmlhttp = new XMLHttpRequest();
@@ -44,19 +44,19 @@
 			}
 			xmlhttp.onreadystatechange = function(num) {
 				if (this.readyState == 4 && this.status == 200) {
-					document.getElementById("demo").innerHTML = this.responseText;
+					document.getElementById("movietab" + caller).innerHTML = this.responseText;
 					var obj = JSON.parse(this.responseText);
 
-						document.getElementById("demo").innerHTML = '<b>' + obj.title + '</b><br />';
+						document.getElementById("movietab" + caller).innerHTML = '<b>' + obj.title + '</b><br />';
 
 						var imageUrl = "http://image.tmdb.org/t/p/w185/" + obj.poster_path;
 						
-						document.getElementById("demo").innerHTML += '<img src="' + imageUrl + '" />';
+						document.getElementById("movietab" + caller).innerHTML += '<img src="' + imageUrl + '" />';
 
 
 				}
 				else{
-					document.getElementById("demo").innerHTML = "bad query";
+					document.getElementById("movietab" + caller).innerHTML = "bad query";
 				}
 
 			};
@@ -107,7 +107,7 @@
 				foreach ($results as $row) {
 					echo '<tr>'
 					. '<td><a href="error.php"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Download_alt_font_awesome.svg/768px-Download_alt_font_awesome.svg.png" alt="Download" style="width:32px;height:32px;"> </a>'
-					. '</td><td id="movietab'.$row[id]. '" onload="showmovie('.$row[moviedbnumber] .' )">'. $row[moviedbnumber] 
+					. '</td><td id="movietab'.$row[id]. '" onload="showmovie('.$row[moviedbnumber] .','.$row[id].')">'. $row[moviedbnumber] 
 					. '</td><td>'. $row[creationdate] 
 					. '</td><td>'. $row[lasteditdate]
 					. '</td><td>'. $row[accountname] 
