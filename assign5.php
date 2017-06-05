@@ -34,7 +34,7 @@
 	}
 	</script>
 	<script type="text/javascript">
-		function showmovie(str) {
+		function showmovie(num) {
 			if (window.XMLHttpRequest) {
 				// code for IE7+, Firefox, Chrome, Opera, Safari
 				xmlhttp = new XMLHttpRequest();
@@ -42,29 +42,25 @@
 				// code for IE6, IE5
 				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 			}
-			xmlhttp.onreadystatechange = function() {
+			xmlhttp.onreadystatechange = function(num) {
 				if (this.readyState == 4 && this.status == 200) {
-					document.getElementById("title").innerHTML = this.responseText;
-					data = JSON.parse(this);
+					document.getElementById("demo").innerHTML = this.responseText;
+					var obj = JSON.parse(this.responseText);
 
-					if (data.results && data.results.length > 0) {
-						var imageUrl = localStorage.getItem('tmdbImageUrlBase') + data.results[0].poster_path;
-						document.getElementByID("movietab5").innerHTML = 'Title: <b>' + data.results[0].title + '</b><br />';
-						document.getElementById("movietab" + str).innerHTML += '<img src="' + imageUrl + '" />';
-					} else {
-						document.getElementByID(asker).text('Nothing found');
-						console.log('Nothing found');
-					}
+						document.getElementById("demo").innerHTML = 'Title: <b>' + obj.title + '</b><br />';
+
+						var imageUrl = "http://image.tmdb.org/t/p/w185/" + obj.poster_path;
+						
+						document.getElementById("demo").innerHTML += '<img src="' + imageUrl + '" />';
+
 
 				}
 				else{
-					alert("something went wrong!");
+					document.getElementById("demo").innerHTML = "bad query";
 				}
 
 			};
-
-			alert("made it this far!");
-			xmlhttp.open("GET","https://api.themoviedb.org/3/movie/" + str + "?api_key=2b8c6c988082f2afded86703adeccbc8&language=en-US",true);
+			xmlhttp.open("GET","https://api.themoviedb.org/3/movie/" + num + "?api_key=2b8c6c988082f2afded86703adeccbc8&language=en-US",true);
 			xmlhttp.send();
 		}
     </script>
