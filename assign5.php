@@ -103,7 +103,7 @@
 						<th>creation date</th>
 						<th>last modified</th>
 						<th>author</th>
-						<th>Reviews toggle</th>';
+						<th>Show Reviews?</th>';
 				foreach ($results as $row) {
 					echo '<tr>'
 					. '<td><a href="error.php"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Download_alt_font_awesome.svg/768px-Download_alt_font_awesome.svg.png" alt="Download" style="width:32px;height:32px;"> </a>'
