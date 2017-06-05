@@ -71,7 +71,7 @@
 	  <div id="centerArea">
 	     <div id="mainArea">
             <myp id="title" class="center"><h2>Uploads</h2></myp>
-<p id="demo" onload="showmovie(155)">Click the button to change the text in this paragraph.</p>		
+<p id="demo" onload="showmovie(155, this)">Click the button to change the text in this paragraph.</p>		
 			<?php
 				$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
 				$username = "fmtextbjvwjlcy";
