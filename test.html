@@ -4,6 +4,11 @@
     <script src="themoviedb.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <title>Testing themoviedb.js</title>
+	<script type="text/javascript">
+	window.onload = function() {
+  foo();
+};
+</script>
 </head>
 <body>
     <p>
@@ -72,6 +77,18 @@
             }
             theMovieDb.search.getMovie(options, successCallback, errorCallback);
         });
+			function foo(){
+            'use strict';
+            var searchTerm = $('#movieNameInput').val(),
+                searchYear = $('#movieYearInput').val(),
+                options = { "query": searchTerm };
+            //options.query = searchTerm;
+            if (!isNaN(searchYear)) {
+                options.year = searchYear;
+            }
+            theMovieDb.search.getMovie(options, successCallback, errorCallback);
+        });
+
 
     </script>
 </body>
