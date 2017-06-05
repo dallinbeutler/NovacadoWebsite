@@ -14,7 +14,7 @@
 	           <img src="babycado.png" alt="avacados" class="centered" />
 			</div>
 			<br>
-            <myp>
+            <myp class="center">
 			   Sorry, not available yet, Check back soon!
 			</myp>
 		 </div>
