@@ -11,15 +11,15 @@ body, html{
 	margin: 0px;	
 	
 }
-th{
-	border: 1px black solid;
-}
+
 tr{
 	margin: auto;
 	position: relative;
 	text-align: center;
 	height: 40px;
 	line-height: 40px;
+    border-style: solid;
+    border-width: 1px;
 }
 td{
 	margin: auto;
