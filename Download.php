@@ -9,7 +9,7 @@
 	  include 'headbar.php';
 	  ?>
 	  <div id="centerArea">
-	     <div id="mainArea">
+	     <div id="mainArea" class="centered">
             <br/>	<div id ="pictureHolder">
 	           <img src="babycado.png" alt="avacados" class="centered" />
 			</div>
