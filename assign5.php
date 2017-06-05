@@ -34,7 +34,7 @@
 	}
 	</script>
 	<script type="text/javascript">
-		function showmovie(num, caller) {
+		function showmovie(number, caller) {
 			if (window.XMLHttpRequest) {
 				// code for IE7+, Firefox, Chrome, Opera, Safari
 				xmlhttp = new XMLHttpRequest();
@@ -44,19 +44,19 @@
 			}
 			xmlhttp.onreadystatechange = function(num) {
 				if (this.readyState == 4 && this.status == 200) {
-					document.getElementById("movietab" + caller).innerHTML = this.responseText;
+					document.getElementById("demo").innerHTML = this.responseText;
 					var obj = JSON.parse(this.responseText);
 
-						document.getElementById("movietab" + caller).innerHTML = '<b>' + obj.title + '</b><br />';
+						document.getElementById("demo").innerHTML = '<b>' + obj.title + '</b><br />';
 
 						var imageUrl = "http://image.tmdb.org/t/p/w185/" + obj.poster_path;
 						
-						document.getElementById("movietab" + caller).innerHTML += '<img src="' + imageUrl + '" />';
+						document.getElementById("demo").innerHTML += '<img src="' + imageUrl + '" />';
 
 
 				}
 				else{
-					document.getElementById("movietab" + caller).innerHTML = "bad query";
+					document.getElementById("demo").innerHTML = "bad query";
 				}
 
 			};
@@ -69,7 +69,8 @@
       <?php include 'headbar.php'; ?>
 	  <div id="centerArea">
 	     <div id="mainArea">
-            <myp id="title" class="center"><h2>Uploads</h2></myp>		
+            <myp id="title" class="center"><h2>Uploads</h2></myp>
+<p id="demo">Click the button to change the text in this paragraph.</p>		
 			<?php
 				$servername = "ec2-23-21-169-238.compute-1.amazonaws.com";
 				$username = "fmtextbjvwjlcy";
