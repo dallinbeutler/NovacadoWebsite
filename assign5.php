@@ -47,7 +47,7 @@
 					document.getElementById("demo").innerHTML = this.responseText;
 					var obj = JSON.parse(this.responseText);
 
-						document.getElementById("demo").innerHTML = 'Title: <b>' + obj.title + '</b><br />';
+						document.getElementById("demo").innerHTML = '<b>' + obj.title + '</b><br />';
 
 						var imageUrl = "http://image.tmdb.org/t/p/w185/" + obj.poster_path;
 						
